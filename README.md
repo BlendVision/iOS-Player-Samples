@@ -7,7 +7,7 @@ The Android Player SDK, called UniPlayer provides convenient API about DRM, medi
 To install one of the dynamic libraries:
 1. Download and unzip the appropriate dynamic SDK for your project.
 2. Drag the unzipped .framework or .xcframework into your main project in the Xcode project navigator. Check 'Copy all items if needed', and add to all targets.
-3. In your Xcode target, under the General tab, select Embed and Sign for KKSPlayer.framework or KKSPlayer.xcframework and GPUImage_iOS.framework
+3. In your Xcode target, under the General tab, select Embed and Sign for KKSPlayer.framework or KKSPlayer.xcframework and [GPUImage_iOS.framework](https://github.com/BlendVision/PSE-framework/releases)
 
 ## How to initialize player (with import BOP license key)
 ```
