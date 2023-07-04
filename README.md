@@ -1,5 +1,4 @@
-# KKSPlayer
-This repository contains sample apps which are using the KKSPlayer iOS SDK.
+# BV One iOS Player SDK
 
 ## Develop Environment Requirements
 - Xcode 14.0+
