@@ -1,3 +1,17 @@
+# KKSPlayer
+This repository contains sample apps which are using the KKSPlayer iOS SDK.
+
+## Develop Environment Requirements
+- Xcode 14.0+
+- iOS 14+
+- Swift 5.0+
+
+## Dependencies
+- [GPUImage_iOS](https://github.com/BlendVision/PSE-framework/releases) `Xcode 14.3.1+ (Swift Version: 5.8.1)`
+- [SwiftWebVTT](https://gitlab.kkinternal.com/playback/swiftwebvtt) `1.0.0`
+- [HLSParser](https://gitlab.kkinternal.com/playback/hlsparser) `1.0.0`
+- [GoogleCast with Guest Mode](https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.7.1_dynamic_beta.xcframework.zip) `4.7.1`
+
 # Integration Guide for Developers
 The tutorial will guide the developer the detailed flow to understand how to integrate with the Android Player SDK step by step in your application.
 The Android Player SDK, called UniPlayer provides convenient API about DRM, media controller and a generic graphic user interface. If the generic UI doesn't fit your needs, you can easily customize your own UI through the provided API.
@@ -122,3 +136,7 @@ player.pause()
 ```
 player.destroy()
 ```
+## Casting Requirements
+> If you are using the Google Cast SDK, make sure the following requirements are met:
+- Use a provisioning profile with `Access WiFi Information` enabled
+- The `NSBluetoothAlwaysUsageDescription` key is set in the info.plist
