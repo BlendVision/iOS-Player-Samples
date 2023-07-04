@@ -12,8 +12,8 @@
 - [GoogleCast with Guest Mode](https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.7.1_dynamic_beta.xcframework.zip) `4.7.1`
 
 # Integration Guide for Developers
-The tutorial will guide the developer the detailed flow to understand how to integrate with the Android Player SDK step by step in your application.
-The Android Player SDK, called UniPlayer provides convenient API about DRM, media controller and a generic graphic user interface. If the generic UI doesn't fit your needs, you can easily customize your own UI through the provided API.
+The tutorial will guide the developer the detailed flow to understand how to integrate with the iOS Player SDK step by step in your application.
+The iOS Player SDK, called UniPlayer provides convenient API about DRM, media controller and a generic graphic user interface. If the generic UI doesn't fit your needs, you can easily customize your own UI through the provided API.
 
 ## Setup for Developing With the KKSPlayer Framework
 ### Setup steps
