@@ -1,5 +1,3 @@
-# BV One iOS Player SDK
-
 ## Develop Environment Requirements
 - Xcode 14.0+
 - iOS 14+
