@@ -1,0 +1,11 @@
+framework module KKSPlayer {
+  umbrella header "KKSPlayer.h"
+
+  export *
+  module * { export * }
+}
+
+module KKSPlayer.Swift {
+  header "KKSPlayer-Swift.h"
+  requires objc
+}
