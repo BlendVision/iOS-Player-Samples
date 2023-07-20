@@ -16,7 +16,7 @@ In order to use BV iOS PalyerSDK package, please go in your project settings in 
 
 If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `KKSPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `KKSPlayer_w/oPSE-latestverions.xcframework` SDK package.
 
-If you want have Google casting feature, please refer [GoogleCast with Guest Mode](https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.7.1_dynamic_beta.xcframework.zip) to setup.
+If you want have Google casting feature, please refer [GoogleCast with Guest Mode](https://developers.google.com/cast/docs/ios_sender) to setup.
 
 ## Setup for Developing With the BV iOS Player SDK
 ### Setup steps
