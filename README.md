@@ -8,10 +8,15 @@ The iOS Player SDK, called UniPlayer provides convenient API about DRM, media co
 - Swift 5.0+
 
 ## Dependencies
-- [GPUImage_iOS](https://github.com/BlendVision/PSE-framework/releases) `Xcode 14.3.1+ (Swift Version: 5.8.1)`
-- [SwiftWebVTT](https://gitlab.kkinternal.com/playback/swiftwebvtt) `1.0.0`
-- [HLSParser](https://gitlab.kkinternal.com/playback/hlsparser) `1.0.0`
-- [GoogleCast with Guest Mode](https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.7.1_dynamic_beta.xcframework.zip) `4.7.1`
+In order to use BV iOS PalyerSDK package, please go in your project settings in Xcode > Package Dependencies tab and click on the "+" icon to add a new dependency.
+
+**Required framework packages**
+- SwiftWebVTT
+- HLSParser
+
+If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `KKSPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `KKSPlayer_w/oPSE-latestverions.xcframework` SDK package.
+
+If you want have Google casting feature, please refer [GoogleCast with Guest Mode](https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-4.7.1_dynamic_beta.xcframework.zip) to setup.
 
 ## Setup for Developing With the BV iOS Player SDK
 ### Setup steps
