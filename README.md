@@ -7,6 +7,14 @@ The iOS Player SDK, called UniPlayer provides convenient API about DRM, media co
 - iOS 14+
 - Swift 5.0+
 
+|  OS Archs                    | iOS (arm64) | Simulator (arm64-M1) | Simulator (x86_64-Intel)
+|  :----                      | :----: | :----:    | :----:
+| KKSPlayer.xcframework	       | ✔      | ✘ | ✔
+| KKSPlayer_WOPSE.xcframework	 | ✔      | ✔         | ✔
+
+
+
+
 ## Dependencies
 In order to use BV iOS PalyerSDK package, please go in your project settings in Xcode > Package Dependencies tab and click on the "+" icon to add a new dependency.
 
