@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "bvplayer-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jaylo1979/bvplayer-ios",
+      "state" : {
+        "revision" : "b68dad9259c09f89df4e4badc70772b242bed633",
+        "version" : "2.4.2"
+      }
+    }
+  ],
+  "version" : 2
+}
