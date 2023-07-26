@@ -17,11 +17,11 @@
 		0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C936A2C2A5E42FF00B44C24 /* GPUImage_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */; };
 		0C936A2D2A5E42FF00B44C24 /* GPUImage_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C9A60F32A6F66F1003093DE /* HLSParser.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A60F22A6F66F1003093DE /* HLSParser.xcframework */; };
+		0C9A60F42A6F66F1003093DE /* HLSParser.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A60F22A6F66F1003093DE /* HLSParser.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C9A60F62A6F66F4003093DE /* SwiftWebVTT.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A60F52A6F66F4003093DE /* SwiftWebVTT.xcframework */; };
+		0C9A60F72A6F66F4003093DE /* SwiftWebVTT.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9A60F52A6F66F4003093DE /* SwiftWebVTT.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CFC724F2A6A81A60060FAE3 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0CFC724E2A6A81A60060FAE3 /* BVPlayer */; };
-		0CFC72732A6E6D470060FAE3 /* HLSParser.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFC72722A6E6D470060FAE3 /* HLSParser.xcframework */; };
-		0CFC72742A6E6D470060FAE3 /* HLSParser.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFC72722A6E6D470060FAE3 /* HLSParser.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0CFC72762A6E6D490060FAE3 /* SwiftWebVTT.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFC72752A6E6D490060FAE3 /* SwiftWebVTT.xcframework */; };
-		0CFC72772A6E6D490060FAE3 /* SwiftWebVTT.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFC72752A6E6D490060FAE3 /* SwiftWebVTT.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CFC727A2A6E70160060FAE3 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0CFC72792A6E70160060FAE3 /* BVPlayer */; };
 /* End PBXBuildFile section */
 
@@ -32,10 +32,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0CFC72742A6E6D470060FAE3 /* HLSParser.xcframework in Embed Frameworks */,
+				0C9A60F42A6F66F1003093DE /* HLSParser.xcframework in Embed Frameworks */,
 				0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */,
 				0C936A2D2A5E42FF00B44C24 /* GPUImage_iOS.framework in Embed Frameworks */,
-				0CFC72772A6E6D490060FAE3 /* SwiftWebVTT.xcframework in Embed Frameworks */,
+				0C9A60F72A6F66F4003093DE /* SwiftWebVTT.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +53,8 @@
 		0C936A182A5E41D900B44C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
 		0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage_iOS.framework; sourceTree = "<group>"; };
+		0C9A60F22A6F66F1003093DE /* HLSParser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HLSParser.xcframework; path = "../../../../../Library/Developer/Xcode/DerivedData/BasicPlaybackSPM-emlslmfukymdjydeshqcwjfrqhhi/SourcePackages/checkouts/bvplayer-ios/Sources/BVPlayer/SDKs/HLSParser.xcframework"; sourceTree = "<group>"; };
+		0C9A60F52A6F66F4003093DE /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftWebVTT.xcframework; path = "../../../../../Library/Developer/Xcode/DerivedData/BasicPlaybackSPM-emlslmfukymdjydeshqcwjfrqhhi/SourcePackages/checkouts/bvplayer-ios/Sources/BVPlayer/SDKs/SwiftWebVTT.xcframework"; sourceTree = "<group>"; };
 		0CFC72722A6E6D470060FAE3 /* HLSParser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HLSParser.xcframework; path = "../../../bvGitHub/bvplayer-ios/Sources/BVPlayer/SDKs/HLSParser.xcframework"; sourceTree = "<group>"; };
 		0CFC72752A6E6D490060FAE3 /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftWebVTT.xcframework; path = "../../../bvGitHub/bvplayer-ios/Sources/BVPlayer/SDKs/SwiftWebVTT.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,10 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFC72732A6E6D470060FAE3 /* HLSParser.xcframework in Frameworks */,
+				0C9A60F32A6F66F1003093DE /* HLSParser.xcframework in Frameworks */,
 				0CFC727A2A6E70160060FAE3 /* BVPlayer in Frameworks */,
 				0CFC724F2A6A81A60060FAE3 /* BVPlayer in Frameworks */,
-				0CFC72762A6E6D490060FAE3 /* SwiftWebVTT.xcframework in Frameworks */,
+				0C9A60F62A6F66F4003093DE /* SwiftWebVTT.xcframework in Frameworks */,
 				0C936A2C2A5E42FF00B44C24 /* GPUImage_iOS.framework in Frameworks */,
 				0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */,
 			);
@@ -120,6 +122,8 @@
 			children = (
 				0CFC72722A6E6D470060FAE3 /* HLSParser.xcframework */,
 				0CFC72752A6E6D490060FAE3 /* SwiftWebVTT.xcframework */,
+				0C9A60F22A6F66F1003093DE /* HLSParser.xcframework */,
+				0C9A60F52A6F66F4003093DE /* SwiftWebVTT.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -438,7 +442,7 @@
 			repositoryURL = "https://github.com/jaylo1979/bvplayer-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 2.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
