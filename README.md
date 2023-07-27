@@ -31,7 +31,7 @@ To add the [BVPLAYER](https://github.com/BlendVision/bvplayer-ios) SDK as a depe
 - Adding the SDK bundle directly
 Please refer to [BVPlayer installation guild](https://github.com/BlendVision/bvplayer-ios) for more details.
 
-## How to initialize player (with import BOP license key)
+## How to initialize player (with import BV One license key)
 ```
 // Create player configuration
 let playerConfig = UniPlayerConfig()
