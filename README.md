@@ -15,23 +15,21 @@ The iOS Player SDK, called UniPlayer provides convenient API about DRM, media co
 
 
 
-## Dependencies
+## Dependencies & Installation
 In order to use BV iOS PalyerSDK package, please go in your project settings in Xcode > Package Dependencies tab and click on the "+" icon to add a new dependency.
 
 **Required framework packages**
 - SwiftWebVTT
 - HLSParser
 
-If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `KKSPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `KKSPlayer_WOPSE-latestverions.xcframework` SDK package.
+If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `KKSPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `KKSPlayer-latestverions－WOPSE.xcframework` SDK package.
 
 If you want have Google casting feature, please refer [GoogleCast with Guest Mode](https://developers.google.com/cast/docs/ios_sender) to setup.
 
-## Setup for Developing With the BV iOS Player SDK
-### Setup steps
-To install one of the dynamic libraries:
-1. Download and unzip the appropriate dynamic SDK for your project.
-2. Drag the unzipped .framework or .xcframework into your main project in the Xcode project navigator. Check 'Copy all items if needed', and add to all targets.
-3. In your Xcode target, under the General tab, select Embed and Sign for KKSPlayer.framework or KKSPlayer.xcframework and [GPUImage_iOS.framework](https://github.com/BlendVision/PSE-framework/releases)
+To add the [BVPLAYER](https://github.com/BlendVision/bvplayer-ios) SDK as a dependency to your project, you have two options:
+- Swift Package Manager
+- Adding the SDK bundle directly
+Please refer to [BVPlayer installation guild](https://github.com/BlendVision/bvplayer-ios) for more details.
 
 ## How to initialize player (with import BOP license key)
 ```
