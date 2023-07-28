@@ -3,10 +3,10 @@
     {
       "identity" : "bvplayer-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jaylo1979/bvplayer-ios",
+      "location" : "https://github.com/BlendVision/bvplayer-ios",
       "state" : {
-        "revision" : "b68dad9259c09f89df4e4badc70772b242bed633",
-        "version" : "2.4.2"
+        "revision" : "91c620f33a93d8ec116aaf3d4254d498359e0e31",
+        "version" : "2.5.0"
       }
     }
   ],
