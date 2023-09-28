@@ -5,8 +5,6 @@ The `AppDelegate` class provided here demonstrates the integration of Google Cas
 ## Important
 Mostly HLS + FairPlay is used, but Cast receiver needs DASH + Widevine, so at least additional DASH url is required, and the sender module may take licenseUrl from source config.
 
-Public interface should include: `CastAppId`, `contentUrl (DASH URL)`,  optional `customData.drm.licenseUrl` and `customData.drm.headers`
-
 ## Casting Requirements
 - Use a provisioning profile with Access WiFi Information enabled
 - The NSBluetoothAlwaysUsageDescription key is set in the info.plist
