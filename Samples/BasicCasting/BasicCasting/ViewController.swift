@@ -8,6 +8,21 @@
 import UIKit
 import KKSPlayer
 
+struct WidevineMaker {
+
+    func makeWidevineConfig(_ sourceConfig: UniSourceConfig) -> UniSourceConfig? {
+        let dashUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/d65451ac-f080-42c7-b3e2-746c4ca40fa7/vod/dash.mpd")!
+
+        // Create DASHSource as a DASH stream is used for casting
+        let castSourceConfig = UniSourceConfig(url: dashUrl, type: .dash)
+        castSourceConfig.title = sourceConfig.title
+        castSourceConfig.sourceDescription = sourceConfig.sourceDescription
+        castSourceConfig.castOptions = sourceConfig.castOptions
+
+        return castSourceConfig
+    }
+}
+
 class ViewController: UIViewController {
     
     var player: UniPlayer!
@@ -29,7 +44,17 @@ class ViewController: UIViewController {
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "dd6136d6-1155-45f8-9874-60f10abfc438"
+        playerConfig.key = "your player license key"
+        
+        playerConfig.remoteControlConfig.prepareSource = { type, sourceConfig in
+            switch type {
+            case .cast:
+                // Create a different source for casting
+                return WidevineMaker().makeWidevineConfig(sourceConfig)
+            @unknown default:
+                return nil
+            }
+        }
         
         // Create player based on player config
         player = UniPlayerFactory.create(player: playerConfig)

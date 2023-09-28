@@ -98,33 +98,23 @@ sourceConfig.castOptions?.customData = [
 ### Provide a different SourceConfig for casting
 For local playback we use a HLS stream and for casting a Widevine protected DASH stream with the same content.
 ```swift!
-func makeWidevineConfig(_ sourceConfig: UniSourceConfig,
-                            content: UniTestContent) -> UniSourceConfig? {
-    guard let dashUrlString = content.dashUrl,
-          let dashUrl = URL(string: dashUrlString) else {
-        return nil
-    }
+func makeWidevineConfig(_ sourceConfig: UniSourceConfig) -> UniSourceConfig? {
+    let dashUrl = URL(string: "your dash url string")!
 
-        // Create DASHSource as a DASH stream is used for casting
+    // Create DASHSource as a DASH stream is used for casting
     let castSourceConfig = UniSourceConfig(url: dashUrl, type: .dash)
     castSourceConfig.title = sourceConfig.title
     castSourceConfig.sourceDescription = sourceConfig.sourceDescription
     castSourceConfig.castOptions = sourceConfig.castOptions
 
-    if let licenseUrl = sourceConfig.drmConfig?.licenseUrl {
-        let widevineConfig = WidevineConfig(license: licenseUrl)
-        widevineConfig.licenseRequestHeaders = content.licenseHeaders
-        castSourceConfig.drmConfig = widevineConfig
-    }
-
     return castSourceConfig
 }
 
-playerConfig.remoteControlConfig.prepareSource = { type, sourceConfig in
+    playerConfig.remoteControlConfig.prepareSource = { type, sourceConfig in
     switch type {
     case .cast:
         // Create a different source for casting
-        return self.makeWidevineConfig(sourceConfig, content: content)
+        return WidevineMaker().makeWidevineConfig(sourceConfig)
     }
 }
 ```
