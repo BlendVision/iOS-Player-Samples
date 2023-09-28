@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     var moduleConfig: [String: String] {
         var config = [String: String]()
-        config[AnalyticsField.token.rawValue] = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNvdXJjZV9pZCI6Ijg0MGEyOTFiLWVlNDMtNDE4NC04NjJlLWYwZTEzM2IzMGUxYSIsInJlc291cmNlX3R5cGUiOiJSRVNPVVJDRV9UWVBFX1ZPRF9FVkVOVCIsIm9yZ19pZCI6IjdiMGQ2NGM2LTIwZmItNDFjNi05YTJiLTk1ZjM2MzhiNTJiYyIsInRlbmFudF9pZCI6Ijg1YjljZmFkLTM1Y2MtNDQyNC05NjE1LWNlZmI3ZTNlNzZjMiIsImlzcyI6Im9yYml0IiwiaWF0IjoxNjkyMDgzOTc5LCJqdGkiOiJiODM0MDIwYi03ZjRlLTRiNTMtYjI0ZS1lMTQ4Mjk5YWE3OTgifQ.UeNacSaSPvAfMfrJ2h6o5Tu_2l4Zi4NubUAcDlqE1PvdtZz1cQjO7E8NnFDSpMeu2wbA1944iO6niAI6pPb5rN6aAsRW2zwpoPh5z_4ob7M9GABq6350OiG8MUvQsF1zcSRmGMS4T3HlOPdCUnc0RLLEOMmfObYCZ5SX5Xzv63URSrfCVC9IDnSr8IwoCYH_LhBwgzRS93eNxzniQCd-nvZZLErCeyZHTG5EQV9bTb4jvrl1g7zB803tk3SXIgt14XMA2_V44-v9lgMZOnj1EJuvFvox_gRW4XesE6AGbpqvajSCSRZ8QbeZZUSlaVYAqpsNFwpXIOCr7R8M_g2gLQ"
+        config[AnalyticsField.token.rawValue] = "analytics token"
         config[AnalyticsField.sessionId.rawValue] = "session id"
         config[AnalyticsField.resourceId.rawValue] = "source id"
         config[AnalyticsField.resourceType.rawValue] = "resource type"
