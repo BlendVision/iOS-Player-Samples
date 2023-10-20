@@ -49,6 +49,7 @@
 		0C351DEB2AE231FE005C99BD /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SwiftWebVTT.xcframework; sourceTree = "<group>"; };
 		0C351DEC2AE231FE005C99BD /* KKSPlayer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KKSPlayer.xcframework; sourceTree = "<group>"; };
 		0C351DED2AE231FE005C99BD /* GPUImage_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage_iOS.framework; sourceTree = "<group>"; };
+		0C351E5E2AE277FC005C99BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0CC7FED62AE2155100E80C5F /* BasicDRMPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDRMPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC7FED92AE2155100E80C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC7FEDB2AE2155100E80C5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		0CC7FECD2AE2155100E80C5F = {
 			isa = PBXGroup;
 			children = (
+				0C351E5E2AE277FC005C99BD /* README.md */,
 				0CC7FED82AE2155100E80C5F /* BasicDRMPlayback */,
 				0CC7FED72AE2155100E80C5F /* Products */,
 				0CC7FEF52AE2176E00E80C5F /* Frameworks */,
