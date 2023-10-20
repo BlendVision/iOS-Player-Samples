@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Define needed resources
-        guard let fairplayStreamUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/d65451ac-f080-42c7-b3e2-746c4ca40fa7/vod/hls.m3u8"),
+        guard let fairplayStreamUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/2e18c688-f643-465f-aa7c-44bc8f2f56b6/vod/hls.m3u8"),
               let certificateUrl = URL(string: "https://drm.platform-qa.kkstream.io/api/v3/drm/license/fairplay_cert"),
               let licenseUrl = URL(string: "https://drm.platform-qa.kkstream.io/api/v3/drm/license") else {
             fatalError("Invalid URL(s) when setting up DRM playback sample")
@@ -59,10 +59,10 @@ class ViewController: UIViewController {
         let sourceConfig = UniSourceConfig(url: fairplayStreamUrl, type: .hls)
         
         // Create drm configuration
-//        let fpsConfig = UniFairPlayConfig(licenseUrl: licenseUrl, certificateUrl: certificateUrl)
-//        fpsConfig.certificateRequestHeaders = certHeader
-//        fpsConfig.licenseRequestHeaders = licenseHeader
-//        sourceConfig.drmConfig = fpsConfig
+        let fpsConfig = UniFairPlayConfig(licenseUrl: licenseUrl, certificateUrl: certificateUrl)
+        fpsConfig.certificateRequestHeaders = certHeader
+        fpsConfig.licenseRequestHeaders = licenseHeader
+        sourceConfig.drmConfig = fpsConfig
         
         // Example of how message request data can be prepared if custom modifications are needed
 //        fpsConfig.prepareMessage = { spcData, assetId in
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         // Example of how certificate data can be prepared if custom modifications are needed
 //        fpsConfig.prepareCertificate = { (data: Data) -> Data in
 //            // Do something with the loaded certificate
-//            return data
+//            data
 //        }
         
         player.load(sourceConfig: sourceConfig)
