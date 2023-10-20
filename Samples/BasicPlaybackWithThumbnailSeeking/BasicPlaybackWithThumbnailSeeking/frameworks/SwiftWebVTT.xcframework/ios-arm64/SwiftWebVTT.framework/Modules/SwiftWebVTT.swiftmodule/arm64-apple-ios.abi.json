@@ -1,0 +1,3617 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SwiftWebVTT"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SwiftWebVTT"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SwiftWebVTT"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTMLCharacterReferences",
+        "printedName": "HTMLCharacterReferences",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "ReferenceNamed",
+            "printedName": "ReferenceNamed",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "index",
+                "printedName": "index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV5indexSSvp",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV5indexSSvp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV5indexSSvg",
+                    "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV5indexSSvg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "codepoints",
+                "printedName": "codepoints",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV10codepointsSaySiGvp",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV10codepointsSaySiGvp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 1,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV10codepointsSaySiGvg",
+                    "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV10codepointsSaySiGvg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(index:codepoints:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceNamed",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV5index10codepointsAESS_SaySiGtcfc",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV5index10codepointsAESS_SaySiGtcfc",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceNamed",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Codepoints",
+                "printedName": "Codepoints",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "Index",
+                    "printedName": "Index",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:11SwiftWebVTT10CodepointsP",
+                "mangledName": "$s11SwiftWebVTT10CodepointsP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ReferenceSubstitute",
+            "printedName": "ReferenceSubstitute",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "index",
+                "printedName": "index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV5indexSivp",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV5indexSivp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV5indexSivg",
+                    "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV5indexSivg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "codepoints",
+                "printedName": "codepoints",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV10codepointsSaySiGvp",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV10codepointsSaySiGvp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 1,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV10codepointsSaySiGvg",
+                    "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV10codepointsSaySiGvg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(index:codepoints:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceSubstitute",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV5index10codepointsAESi_SaySiGtcfc",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV5index10codepointsAESi_SaySiGtcfc",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceSubstitute",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Codepoints",
+                "printedName": "Codepoints",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "Index",
+                    "printedName": "Index",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:11SwiftWebVTT10CodepointsP",
+                "mangledName": "$s11SwiftWebVTT10CodepointsP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "named",
+            "printedName": "named",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceNamed",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV5namedSDySSAC14ReferenceNamedVGvp",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV5namedSDySSAC14ReferenceNamedVGvp",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReferenceNamed",
+                        "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed",
+                        "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV5namedSDySSAC14ReferenceNamedVGvg",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV5namedSDySSAC14ReferenceNamedVGvg",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "substitute",
+            "printedName": "substitute",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.Int : SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceSubstitute",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV10substituteSDySiAC19ReferenceSubstituteVGvp",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV10substituteSDySiAC19ReferenceSubstituteVGvp",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.Int : SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReferenceSubstitute",
+                        "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute",
+                        "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV10substituteSDySiAC19ReferenceSubstituteVGvg",
+                "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV10substituteSDySiAC19ReferenceSubstituteVGvg",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "standard",
+            "printedName": "standard()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTMLCharacterReferences",
+                "printedName": "SwiftWebVTT.HTMLCharacterReferences",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV8standardACyFZ",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV8standardACyFZ",
+            "moduleName": "SwiftWebVTT",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "string",
+            "printedName": "string(reference:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV6string9referenceSSSgSi_tF",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV6string9referenceSSSgSi_tF",
+            "moduleName": "SwiftWebVTT",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "string",
+            "printedName": "string(reference:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV6string9referenceSSSgSS_tF",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV6string9referenceSSSgSS_tF",
+            "moduleName": "SwiftWebVTT",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(named:substitute:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTMLCharacterReferences",
+                "printedName": "SwiftWebVTT.HTMLCharacterReferences",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceNamed",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceNamed",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV14ReferenceNamedV"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.Int : SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReferenceSubstitute",
+                    "printedName": "SwiftWebVTT.HTMLCharacterReferences.ReferenceSubstitute",
+                    "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV19ReferenceSubstituteV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV5named10substituteACSDySSAC14ReferenceNamedVG_SDySiAC0H10SubstituteVGtcfc",
+            "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV5named10substituteACSDySSAC14ReferenceNamedVG_SDySiAC0H10SubstituteVGtcfc",
+            "moduleName": "SwiftWebVTT",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV",
+        "mangledName": "$s11SwiftWebVTT23HTMLCharacterReferencesV",
+        "moduleName": "SwiftWebVTT",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Codepoints",
+        "printedName": "Codepoints",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "Index",
+            "printedName": "Index",
+            "declKind": "AssociatedType",
+            "usr": "s:11SwiftWebVTT10CodepointsP5IndexQa",
+            "mangledName": "$s11SwiftWebVTT10CodepointsP5IndexQa",
+            "moduleName": "SwiftWebVTT",
+            "protocolReq": true
+          },
+          {
+            "kind": "Var",
+            "name": "index",
+            "printedName": "index",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Index"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT10CodepointsP5index5IndexQzvp",
+            "mangledName": "$s11SwiftWebVTT10CodepointsP5index5IndexQzvp",
+            "moduleName": "SwiftWebVTT",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Index"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT10CodepointsP5index5IndexQzvg",
+                "mangledName": "$s11SwiftWebVTT10CodepointsP5index5IndexQzvg",
+                "moduleName": "SwiftWebVTT",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftWebVTT.Codepoints>",
+                "sugared_genericSig": "<Self where Self : SwiftWebVTT.Codepoints>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "codepoints",
+            "printedName": "codepoints",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT10CodepointsP10codepointsSaySiGvp",
+            "mangledName": "$s11SwiftWebVTT10CodepointsP10codepointsSaySiGvp",
+            "moduleName": "SwiftWebVTT",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT10CodepointsP10codepointsSaySiGvg",
+                "mangledName": "$s11SwiftWebVTT10CodepointsP10codepointsSaySiGvg",
+                "moduleName": "SwiftWebVTT",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftWebVTT.Codepoints>",
+                "sugared_genericSig": "<Self where Self : SwiftWebVTT.Codepoints>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "file",
+            "printedName": "file(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[τ_0_0.Index : τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Index"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT10CodepointsP4fileySDy5IndexQzxGSSFZ",
+            "mangledName": "$s11SwiftWebVTT10CodepointsP4fileySDy5IndexQzxGSSFZ",
+            "moduleName": "SwiftWebVTT",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftWebVTT.Codepoints>",
+            "sugared_genericSig": "<Self where Self : SwiftWebVTT.Codepoints>",
+            "static": true,
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "string",
+            "printedName": "string",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT10CodepointsPAAE6stringSSvp",
+            "mangledName": "$s11SwiftWebVTT10CodepointsPAAE6stringSSvp",
+            "moduleName": "SwiftWebVTT",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT10CodepointsPAAE6stringSSvg",
+                "mangledName": "$s11SwiftWebVTT10CodepointsPAAE6stringSSvg",
+                "moduleName": "SwiftWebVTT",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftWebVTT.Codepoints>",
+                "sugared_genericSig": "<Self where Self : SwiftWebVTT.Codepoints>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "file",
+            "printedName": "file(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[τ_0_0.Index : τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Index"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT10CodepointsPAAE4fileySDy5IndexQzxGSSFZ",
+            "mangledName": "$s11SwiftWebVTT10CodepointsPAAE4fileySDy5IndexQzxGSSFZ",
+            "moduleName": "SwiftWebVTT",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftWebVTT.Codepoints>",
+            "sugared_genericSig": "<Self where Self : SwiftWebVTT.Codepoints>",
+            "static": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11SwiftWebVTT10CodepointsP",
+        "mangledName": "$s11SwiftWebVTT10CodepointsP",
+        "moduleName": "SwiftWebVTT",
+        "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0.Index : Swift.Hashable>",
+        "sugared_genericSig": "<Self : Swift.Decodable, Self.Index : Swift.Hashable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SwiftWebVTT"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CustomScanner",
+        "printedName": "CustomScanner",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "scanner",
+            "printedName": "scanner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Scanner",
+                "printedName": "Foundation.Scanner",
+                "usr": "c:objc(cs)NSScanner"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT13CustomScannerC7scanner33_81A756E5EBFF1C17C719146897299A53LLSo9NSScannerCvp",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC7scanner33_81A756E5EBFF1C17C719146897299A53LLSo9NSScannerCvp",
+            "moduleName": "SwiftWebVTT",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "length",
+            "printedName": "length",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT13CustomScannerC6length33_81A756E5EBFF1C17C719146897299A53LLSivp",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC6length33_81A756E5EBFF1C17C719146897299A53LLSivp",
+            "moduleName": "SwiftWebVTT",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CustomScanner",
+                "printedName": "SwiftWebVTT.CustomScanner",
+                "usr": "s:11SwiftWebVTT13CustomScannerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SwiftWebVTT13CustomScannerC6stringACSS_tcfc",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC6stringACSS_tcfc",
+            "moduleName": "SwiftWebVTT",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "scanLocation",
+            "printedName": "scanLocation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT13CustomScannerC12scanLocationSivp",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC12scanLocationSivp",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT13CustomScannerC12scanLocationSivg",
+                "mangledName": "$s11SwiftWebVTT13CustomScannerC12scanLocationSivg",
+                "moduleName": "SwiftWebVTT",
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT13CustomScannerC12scanLocationSivs",
+                "mangledName": "$s11SwiftWebVTT13CustomScannerC12scanLocationSivs",
+                "moduleName": "SwiftWebVTT",
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT13CustomScannerC12scanLocationSivM",
+                "mangledName": "$s11SwiftWebVTT13CustomScannerC12scanLocationSivM",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAtEnd",
+            "printedName": "isAtEnd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT13CustomScannerC7isAtEndSbvp",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC7isAtEndSbvp",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT13CustomScannerC7isAtEndSbvg",
+                "mangledName": "$s11SwiftWebVTT13CustomScannerC7isAtEndSbvg",
+                "moduleName": "SwiftWebVTT",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "scanUpToCharacters",
+            "printedName": "scanUpToCharacters(from:thenSkip:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CharacterSet",
+                "printedName": "Foundation.CharacterSet",
+                "usr": "s:10Foundation12CharacterSetV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC18scanUpToCharacters4from8thenSkipSSSg10Foundation12CharacterSetV_SitF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC18scanUpToCharacters4from8thenSkipSSSg10Foundation12CharacterSetV_SitF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "declAttributes": [
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scanCharacters",
+            "printedName": "scanCharacters(from:thenSkip:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CharacterSet",
+                "printedName": "Foundation.CharacterSet",
+                "usr": "s:10Foundation12CharacterSetV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC14scanCharacters4from8thenSkipSSSg10Foundation12CharacterSetV_SitF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC14scanCharacters4from8thenSkipSSSg10Foundation12CharacterSetV_SitF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "declAttributes": [
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scanInt",
+            "printedName": "scanInt(hexadecimal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC7scanInt11hexadecimalSiSgSb_tF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC7scanInt11hexadecimalSiSgSb_tF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scanCharacter",
+            "printedName": "scanCharacter()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Character?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC13scanCharacterSJSgyF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC13scanCharacterSJSgyF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scan",
+            "printedName": "scan(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC4scanySSSgSiF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC4scanySSSgSiF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peek",
+            "printedName": "peek(_:thenSkip:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC4peek_8thenSkipSSSgSi_SbtF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC4peek_8thenSkipSSSgSi_SbtF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peekCharacter",
+            "printedName": "peekCharacter(thenSkip:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Character?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC13peekCharacter8thenSkipSJSgSb_tF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC13peekCharacter8thenSkipSJSgSb_tF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "skip",
+            "printedName": "skip(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC4skipyySiF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC4skipyySiF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleCharacterReference",
+            "printedName": "handleCharacterReference(references:startSequence:allowedCharacter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTMLCharacterReferences",
+                "printedName": "SwiftWebVTT.HTMLCharacterReferences",
+                "usr": "s:11SwiftWebVTT23HTMLCharacterReferencesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Character?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT13CustomScannerC24handleCharacterReference10references13startSequence07allowedG0SSAA23HTMLCharacterReferencesV_SSSJSgtF",
+            "mangledName": "$s11SwiftWebVTT13CustomScannerC24handleCharacterReference10references13startSequence07allowedG0SSAA23HTMLCharacterReferencesV_SSSJSgtF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11SwiftWebVTT13CustomScannerC",
+        "mangledName": "$s11SwiftWebVTT13CustomScannerC",
+        "moduleName": "SwiftWebVTT",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SwiftWebVTT"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebVTT",
+        "printedName": "WebVTT",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Cue",
+            "printedName": "Cue",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "timing",
+                "printedName": "timing",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timing",
+                    "printedName": "SwiftWebVTT.WebVTT.Timing",
+                    "usr": "s:11SwiftWebVTT0bC0V6TimingV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V3CueV6timingAC6TimingVvp",
+                "mangledName": "$s11SwiftWebVTT0bC0V3CueV6timingAC6TimingVvp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Timing",
+                        "printedName": "SwiftWebVTT.WebVTT.Timing",
+                        "usr": "s:11SwiftWebVTT0bC0V6TimingV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV6timingAC6TimingVvg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V3CueV6timingAC6TimingVvg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "text",
+                "printedName": "text",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V3CueV4textSSvp",
+                "mangledName": "$s11SwiftWebVTT0bC0V3CueV4textSSvp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV4textSSvg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V3CueV4textSSvg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(timing:text:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Cue",
+                    "printedName": "SwiftWebVTT.WebVTT.Cue",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timing",
+                    "printedName": "SwiftWebVTT.WebVTT.Timing",
+                    "usr": "s:11SwiftWebVTT0bC0V6TimingV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11SwiftWebVTT0bC0V3CueV6timing4textAeC6TimingV_SStcfc",
+                "mangledName": "$s11SwiftWebVTT0bC0V3CueV6timing4textAeC6TimingV_SStcfc",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "timeStart",
+                "printedName": "timeStart",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V3CueV9timeStartSdvp",
+                "mangledName": "$s11SwiftWebVTT0bC0V3CueV9timeStartSdvp",
+                "moduleName": "SwiftWebVTT",
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV9timeStartSdvg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V3CueV9timeStartSdvg",
+                    "moduleName": "SwiftWebVTT",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "timeEnd",
+                "printedName": "timeEnd",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V3CueV7timeEndSdvp",
+                "mangledName": "$s11SwiftWebVTT0bC0V3CueV7timeEndSdvp",
+                "moduleName": "SwiftWebVTT",
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV7timeEndSdvg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V3CueV7timeEndSdvg",
+                    "moduleName": "SwiftWebVTT",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "duration",
+                "printedName": "duration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V3CueV8durationSdvp",
+                "mangledName": "$s11SwiftWebVTT0bC0V3CueV8durationSdvp",
+                "moduleName": "SwiftWebVTT",
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV8durationSdvg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V3CueV8durationSdvg",
+                    "moduleName": "SwiftWebVTT",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11SwiftWebVTT0bC0V3CueV",
+            "mangledName": "$s11SwiftWebVTT0bC0V3CueV",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Timing",
+            "printedName": "Timing",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "start",
+                "printedName": "start",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V6TimingV5startSivp",
+                "mangledName": "$s11SwiftWebVTT0bC0V6TimingV5startSivp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V6TimingV5startSivg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V6TimingV5startSivg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "end",
+                "printedName": "end",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V6TimingV3endSivp",
+                "mangledName": "$s11SwiftWebVTT0bC0V6TimingV3endSivp",
+                "moduleName": "SwiftWebVTT",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V6TimingV3endSivg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V6TimingV3endSivg",
+                    "moduleName": "SwiftWebVTT",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(start:end:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Timing",
+                    "printedName": "SwiftWebVTT.WebVTT.Timing",
+                    "usr": "s:11SwiftWebVTT0bC0V6TimingV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11SwiftWebVTT0bC0V6TimingV5start3endAESi_Sitcfc",
+                "mangledName": "$s11SwiftWebVTT0bC0V6TimingV5start3endAESi_Sitcfc",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "duration",
+                "printedName": "duration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11SwiftWebVTT0bC0V6TimingV8durationSivp",
+                "mangledName": "$s11SwiftWebVTT0bC0V6TimingV8durationSivp",
+                "moduleName": "SwiftWebVTT",
+                "isFromExtension": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11SwiftWebVTT0bC0V6TimingV8durationSivg",
+                    "mangledName": "$s11SwiftWebVTT0bC0V6TimingV8durationSivg",
+                    "moduleName": "SwiftWebVTT",
+                    "isFromExtension": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11SwiftWebVTT0bC0V6TimingV",
+            "mangledName": "$s11SwiftWebVTT0bC0V6TimingV",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cues",
+            "printedName": "cues",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SwiftWebVTT.WebVTT.Cue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Cue",
+                    "printedName": "SwiftWebVTT.WebVTT.Cue",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT0bC0V4cuesSayAC3CueVGvp",
+            "mangledName": "$s11SwiftWebVTT0bC0V4cuesSayAC3CueVGvp",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[SwiftWebVTT.WebVTT.Cue]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Cue",
+                        "printedName": "SwiftWebVTT.WebVTT.Cue",
+                        "usr": "s:11SwiftWebVTT0bC0V3CueV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT0bC0V4cuesSayAC3CueVGvg",
+                "mangledName": "$s11SwiftWebVTT0bC0V4cuesSayAC3CueVGvg",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cues:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebVTT",
+                "printedName": "SwiftWebVTT.WebVTT",
+                "usr": "s:11SwiftWebVTT0bC0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SwiftWebVTT.WebVTT.Cue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Cue",
+                    "printedName": "SwiftWebVTT.WebVTT.Cue",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SwiftWebVTT0bC0V4cuesACSayAC3CueVG_tcfc",
+            "mangledName": "$s11SwiftWebVTT0bC0V4cuesACSayAC3CueVG_tcfc",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11SwiftWebVTT0bC0V",
+        "mangledName": "$s11SwiftWebVTT0bC0V",
+        "moduleName": "SwiftWebVTT",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SwiftWebVTT",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebVTTError",
+        "printedName": "WebVTTError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidSignature",
+            "printedName": "invalidSignature",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftWebVTT.WebVTTError.Type) -> SwiftWebVTT.WebVTTError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebVTTError",
+                    "printedName": "SwiftWebVTT.WebVTTError",
+                    "usr": "s:11SwiftWebVTT0B8VTTErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SwiftWebVTT.WebVTTError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebVTTError",
+                        "printedName": "SwiftWebVTT.WebVTTError",
+                        "usr": "s:11SwiftWebVTT0B8VTTErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SwiftWebVTT0B8VTTErrorO16invalidSignatureyA2CmF",
+            "mangledName": "$s11SwiftWebVTT0B8VTTErrorO16invalidSignatureyA2CmF",
+            "moduleName": "SwiftWebVTT"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebVTTError",
+                "printedName": "SwiftWebVTT.WebVTTError",
+                "usr": "s:11SwiftWebVTT0B8VTTErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebVTTError",
+                "printedName": "SwiftWebVTT.WebVTTError",
+                "usr": "s:11SwiftWebVTT0B8VTTErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT0B8VTTErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11SwiftWebVTT0B8VTTErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "SwiftWebVTT",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SwiftWebVTT0B8VTTErrorO9hashValueSivp",
+            "mangledName": "$s11SwiftWebVTT0B8VTTErrorO9hashValueSivp",
+            "moduleName": "SwiftWebVTT",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SwiftWebVTT0B8VTTErrorO9hashValueSivg",
+                "mangledName": "$s11SwiftWebVTT0B8VTTErrorO9hashValueSivg",
+                "moduleName": "SwiftWebVTT",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT0B8VTTErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11SwiftWebVTT0B8VTTErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "SwiftWebVTT",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11SwiftWebVTT0B8VTTErrorO",
+        "mangledName": "$s11SwiftWebVTT0B8VTTErrorO",
+        "moduleName": "SwiftWebVTT",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebVTTParser",
+        "printedName": "WebVTTParser",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebVTTParser",
+                "printedName": "SwiftWebVTT.WebVTTParser",
+                "usr": "s:11SwiftWebVTT0B9VTTParserC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SwiftWebVTT0B9VTTParserC6stringACSS_tcfc",
+            "mangledName": "$s11SwiftWebVTT0B9VTTParserC6stringACSS_tcfc",
+            "moduleName": "SwiftWebVTT",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "parse",
+            "printedName": "parse()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebVTT",
+                "printedName": "SwiftWebVTT.WebVTT",
+                "usr": "s:11SwiftWebVTT0bC0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT0B9VTTParserC5parseAA0bC0VyKF",
+            "mangledName": "$s11SwiftWebVTT0B9VTTParserC5parseAA0bC0VyKF",
+            "moduleName": "SwiftWebVTT",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deduplicateCues",
+            "printedName": "deduplicateCues(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SwiftWebVTT.WebVTT.Cue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Cue",
+                    "printedName": "SwiftWebVTT.WebVTT.Cue",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[SwiftWebVTT.WebVTT.Cue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Cue",
+                    "printedName": "SwiftWebVTT.WebVTT.Cue",
+                    "usr": "s:11SwiftWebVTT0bC0V3CueV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SwiftWebVTT0B9VTTParserC15deduplicateCuesySayAA0bC0V3CueVGAIFZ",
+            "mangledName": "$s11SwiftWebVTT0B9VTTParserC15deduplicateCuesySayAA0bC0V3CueVGAIFZ",
+            "moduleName": "SwiftWebVTT",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11SwiftWebVTT0B9VTTParserC",
+        "mangledName": "$s11SwiftWebVTT0B9VTTParserC",
+        "moduleName": "SwiftWebVTT",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Collection",
+        "printedName": "Collection",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "item",
+            "printedName": "item(at:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.Element?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Element"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Index"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Sl11SwiftWebVTTE4item2at7ElementQzSg5IndexQz_tF",
+            "mangledName": "$sSl11SwiftWebVTTE4item2at7ElementQzSg5IndexQz_tF",
+            "moduleName": "SwiftWebVTT",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Collection>",
+            "sugared_genericSig": "<Self where Self : Swift.Collection>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:Sl",
+        "mangledName": "$sSl",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0 : Swift.Sequence, τ_0_0.Element == τ_0_0.SubSequence.Element, τ_0_0.Index : Swift.Comparable, τ_0_0.Index == τ_0_0.Indices.Element, τ_0_0.Indices : Swift.Collection, τ_0_0.Indices == τ_0_0.Indices.SubSequence, τ_0_0.SubSequence : Swift.Collection, τ_0_0.SubSequence == τ_0_0.SubSequence.SubSequence, τ_0_0.Indices.Element == τ_0_0.Indices.Index, τ_0_0.Indices.Index == τ_0_0.SubSequence.Index>",
+        "sugared_genericSig": "<Self : Swift.Sequence, Self.Element == Self.SubSequence.Element, Self.Index : Swift.Comparable, Self.Index == Self.Indices.Element, Self.Indices : Swift.Collection, Self.Indices == Self.Indices.SubSequence, Self.SubSequence : Swift.Collection, Self.SubSequence == Self.SubSequence.SubSequence, Self.Indices.Element == Self.Indices.Index, Self.Indices.Index == Self.SubSequence.Index>",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "String",
+        "printedName": "String",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "characters",
+            "printedName": "characters()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Character]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS11SwiftWebVTTE10charactersSaySJGyF",
+            "mangledName": "$sSS11SwiftWebVTTE10charactersSaySJGyF",
+            "moduleName": "SwiftWebVTT",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decodingHTMLEntities",
+            "printedName": "decodingHTMLEntities()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS11SwiftWebVTTE20decodingHTMLEntitiesSSyF",
+            "mangledName": "$sSS11SwiftWebVTTE20decodingHTMLEntitiesSSyF",
+            "moduleName": "SwiftWebVTT",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SS",
+        "mangledName": "$sSS",
+        "moduleName": "Swift",
+        "declAttributes": [
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CodingKeyRepresentable",
+            "printedName": "CodingKeyRepresentable",
+            "usr": "s:s22CodingKeyRepresentableP",
+            "mangledName": "$ss22CodingKeyRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasContiguousBytes",
+            "printedName": "_HasContiguousBytes",
+            "usr": "s:s19_HasContiguousBytesP",
+            "mangledName": "$ss19_HasContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStream",
+            "printedName": "TextOutputStream",
+            "usr": "s:s16TextOutputStreamP",
+            "mangledName": "$ss16TextOutputStreamP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TextOutputStreamable",
+            "printedName": "TextOutputStreamable",
+            "usr": "s:s20TextOutputStreamableP",
+            "mangledName": "$ss20TextOutputStreamableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
+            "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
+            "mangledName": "$ss41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "printedName": "_ExpressibleByBuiltinExtendedGraphemeClusterLiteral",
+            "usr": "s:s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByBuiltinStringLiteral",
+            "printedName": "_ExpressibleByBuiltinStringLiteral",
+            "usr": "s:s34_ExpressibleByBuiltinStringLiteralP",
+            "mangledName": "$ss34_ExpressibleByBuiltinStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringLiteral",
+            "printedName": "ExpressibleByStringLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringLiteralType",
+                "printedName": "StringLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s26ExpressibleByStringLiteralP",
+            "mangledName": "$ss26ExpressibleByStringLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "printedName": "ExpressibleByExtendedGraphemeClusterLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ExtendedGraphemeClusterLiteralType",
+                "printedName": "ExtendedGraphemeClusterLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s43ExpressibleByExtendedGraphemeClusterLiteralP",
+            "mangledName": "$ss43ExpressibleByExtendedGraphemeClusterLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByUnicodeScalarLiteral",
+            "printedName": "ExpressibleByUnicodeScalarLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarLiteralType",
+                "printedName": "UnicodeScalarLiteralType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s33ExpressibleByUnicodeScalarLiteralP",
+            "mangledName": "$ss33ExpressibleByUnicodeScalarLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BidirectionalCollection",
+            "printedName": "BidirectionalCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SK",
+            "mangledName": "$sSK"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.String.Index",
+                    "usr": "s:SS5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Character",
+                    "printedName": "Swift.Character",
+                    "usr": "s:SJ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.String.Iterator",
+                    "usr": "s:SS8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "StringProtocol",
+            "printedName": "StringProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UTF8View",
+                "printedName": "UTF8View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF8View",
+                    "printedName": "Swift.String.UTF8View",
+                    "usr": "s:SS8UTF8ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UTF16View",
+                "printedName": "UTF16View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UTF16View",
+                    "printedName": "Swift.String.UTF16View",
+                    "usr": "s:SS9UTF16ViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "UnicodeScalarView",
+                "printedName": "UnicodeScalarView",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnicodeScalarView",
+                    "printedName": "Swift.String.UnicodeScalarView",
+                    "usr": "s:SS17UnicodeScalarViewV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sy",
+            "mangledName": "$sSy"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByStringInterpolation",
+            "printedName": "ExpressibleByStringInterpolation",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "StringInterpolation",
+                "printedName": "StringInterpolation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultStringInterpolation",
+                    "printedName": "Swift.DefaultStringInterpolation",
+                    "usr": "s:s26DefaultStringInterpolationV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s32ExpressibleByStringInterpolationP",
+            "mangledName": "$ss32ExpressibleByStringInterpolationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LosslessStringConvertible",
+            "printedName": "LosslessStringConvertible",
+            "usr": "s:s25LosslessStringConvertibleP",
+            "mangledName": "$ss25LosslessStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RangeReplaceableCollection",
+            "printedName": "RangeReplaceableCollection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Substring",
+                    "printedName": "Swift.Substring",
+                    "usr": "s:Ss"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sm",
+            "mangledName": "$sSm"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MirrorPath",
+            "printedName": "MirrorPath",
+            "usr": "s:s10MirrorPathP",
+            "mangledName": "$ss10MirrorPathP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/HTMLCharacterReferences.swift",
+      "kind": "StringLiteral",
+      "offset": 3110,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/Scanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 581,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/Scanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 846,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/Scanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1047,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/Scanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1875,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/Scanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2259,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 360,
+      "length": 26,
+      "value": "\" \t\n\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 10,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 498,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2761,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2832,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2857,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2887,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3099,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3127,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 3197,
+      "length": 5,
+      "value": "\"-->\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3207,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3258,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3277,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3329,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 3525,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3558,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3827,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 3881,
+      "length": 7,
+      "value": "\"STYLE\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 4011,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 4071,
+      "length": 8,
+      "value": "\"REGION\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 4201,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 4291,
+      "length": 10,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 4338,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 5004,
+      "length": 4,
+      "value": "\":.\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "Array",
+      "offset": 7344,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "Array",
+      "offset": 7381,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "Array",
+      "offset": 7416,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 7566,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 7644,
+      "length": 3,
+      "value": "\"<\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7792,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8022,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8210,
+      "length": 10,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8222,
+      "length": 10,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8234,
+      "length": 10,
+      "value": "\"\f\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8246,
+      "length": 10,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8327,
+      "length": 10,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8403,
+      "length": 10,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8472,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8477,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8482,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8487,
+      "length": 3,
+      "value": "\"3\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8492,
+      "length": 3,
+      "value": "\"4\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8497,
+      "length": 3,
+      "value": "\"5\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8502,
+      "length": 3,
+      "value": "\"6\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8507,
+      "length": 3,
+      "value": "\"7\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8512,
+      "length": 3,
+      "value": "\"8\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8517,
+      "length": 3,
+      "value": "\"9\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8615,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8653,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8694,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8888,
+      "length": 10,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8900,
+      "length": 10,
+      "value": "\"\f\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8912,
+      "length": 10,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 8993,
+      "length": 10,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9107,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9176,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9395,
+      "length": 10,
+      "value": "\"\t\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9407,
+      "length": 10,
+      "value": "\"\f\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9419,
+      "length": 10,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "Array",
+      "offset": 9511,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9583,
+      "length": 10,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9748,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "Array",
+      "offset": 9833,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 9900,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 10124,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 10214,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10541,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 10646,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 10769,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/bobchang\/Desktop\/swiftwebvtt\/Sources\/SwiftWebVTT\/WebVTTParser.swift",
+      "kind": "StringLiteral",
+      "offset": 10982,
+      "length": 3,
+      "value": "\">\""
+    }
+  ]
+}

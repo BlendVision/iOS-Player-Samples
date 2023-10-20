@@ -1,0 +1,4 @@
+framework module GPUImage_iOS {
+  header "GPUImage_iOS-Swift.h"
+  requires objc
+}
