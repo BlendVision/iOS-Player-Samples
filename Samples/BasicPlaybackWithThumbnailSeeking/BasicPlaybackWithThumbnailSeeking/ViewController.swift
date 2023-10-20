@@ -23,13 +23,17 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .black
         
         // Define needed resources
-        guard let streamUrl = URL(string: "ttps://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/d65451ac-f080-42c7-b3e2-746c4ca40fa7/vod/hls.m3u8")else {
+        guard let streamUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/d65451ac-f080-42c7-b3e2-746c4ca40fa7/vod/hls.m3u8") else {
+            return
+        }
+        
+        guard let thumbnailUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/d65451ac-f080-42c7-b3e2-746c4ca40fa7/thumbnail/00/thumbnails.vtt") else {
             return
         }
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "dd6136d6-1155-45f8-9874-60f10abfc438" //"your-license-key"
+        playerConfig.key = "your-license-key"
         
         // Create player based on player config
         player = UniPlayerFactory.create(player: playerConfig)
@@ -48,6 +52,15 @@ class ViewController: UIViewController {
         
         // Create source config
         let sourceConfig = UniSourceConfig(url: streamUrl, type: .hls)
+        
+        /// Creates a new thumbnail track based on the given URL and provided metadata.
+        sourceConfig.thumbnailTrack = UniThumbnailTrack(
+            url: thumbnailUrl,
+            label: "thumbnail",
+            identifier: UUID().uuidString,
+            isDefaultTrack: false
+        )
+        
         player.load(sourceConfig: sourceConfig)
     }
 
