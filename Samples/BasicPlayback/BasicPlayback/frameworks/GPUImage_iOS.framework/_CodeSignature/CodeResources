@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/GPUImage_iOS-Swift.h</key>
 		<data>
-		7IeKR2/MsufvgzRpdqo6ilbe1I4=
+		91CA5Z7T90RGmnDRHmqzMAZ1oRU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NPu+pugv53eU+kZPIdRoif+KiV0=
+		K6iohdWINAwsG/f3ibX8sgPSVgs=
 		</data>
 		<key>Modules/GPUImage_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/GPUImage_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		C5d6PpFpjugFgYqd1IGKSs3Cz6Q=
+		TSOnv//9W3h0ITFB0cwnb6QmXv4=
 		</data>
 		<key>Modules/GPUImage_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		nQqk9RXUXIjyVuz7RnMKYsUp80w=
+		7ZrHcS6a3+gx6GbUP9sXzD26nzc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		ZVdRaBmQ8O0BT8IuVIvewYpO1MI=
+		mGr713jL3F7gpdBjQU9E1T9mXLY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JU8uzz4daXZIGhSLUZTHW/6q5z6pWrvjOflzVWoNxuU=
+			v0IK8U5dlPowXSrVoLRxz4YpNzSYM2RaBGccpXW/GaE=
 			</data>
 		</dict>
 		<key>Modules/GPUImage_iOS.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -53,14 +53,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XpGOCIPWlxFUwAMG1sbBoK3LLsuj7yaBROul9SIHDpo=
+			6uekckO/NYqe+rT54zyECnTLQ+4+0UYDGNtriQQLdoc=
 			</data>
 		</dict>
 		<key>Modules/GPUImage_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CrODMHinHZm4oXKd3E+TgdEw8Yu8hAcLOpkIfdQDy48=
+			NCfCBR4YXoj6hbkLJSmpfou39sb0wo7xWREf4zQ0+jY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6k1K08E0A816bC9c5nCZ+sKRim4CLYShfJ5qu5oyEgs=
+			D5FnvV4l9LTsFDPJEyWLZhfneiHGfsADy3i3SrSLmZ8=
 			</data>
 		</dict>
 	</dict>
