@@ -213,7 +213,7 @@ class DownloadDetailViewController: UIViewController {
         }
         
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "dd6136d6-1155-45f8-9874-60f10abfc438"
+        playerConfig.key = "Your-License-Key"
         
         let player = UniPlayerFactory.create(player: playerConfig)
         let controller = UniPlayerViewController()
