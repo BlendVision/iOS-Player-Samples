@@ -45,6 +45,7 @@
 		0CA438682B46DD9D00A639BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CA4386A2B46DD9D00A639BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CBD7A122B47F02C00CD7EB9 /* DownloadDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDetailViewController.swift; sourceTree = "<group>"; };
+		0CC70B1C2B4B8995003A9E92 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0CE516D32B47D8A500E49A6B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0CE516DB2B47EAF600E49A6B /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
 		0CE516E02B47EC1A00E49A6B /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		0CA438502B46DD9C00A639BC = {
 			isa = PBXGroup;
 			children = (
+				0CC70B1C2B4B8995003A9E92 /* README.md */,
 				0CA4385B2B46DD9C00A639BC /* BasicOfflinePlayback */,
 				0CA4385A2B46DD9C00A639BC /* Products */,
 			);
