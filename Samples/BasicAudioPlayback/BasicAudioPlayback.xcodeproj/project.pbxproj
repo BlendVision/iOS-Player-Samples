@@ -13,9 +13,9 @@
 		0C5CBD5F2B0EDE2A00FF279F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBD5D2B0EDE2A00FF279F /* Main.storyboard */; };
 		0C5CBD612B0EDE2B00FF279F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBD602B0EDE2B00FF279F /* Assets.xcassets */; };
 		0C5CBD642B0EDE2B00FF279F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5CBD622B0EDE2B00FF279F /* LaunchScreen.storyboard */; };
-		0C5CBD772B0EF1B900FF279F /* BVPlayerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5CBD762B0EF1B900FF279F /* BVPlayerCore */; };
 		0C5CBD7B2B0EF2CE00FF279F /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5CBD792B0EF27600FF279F /* GoogleCast.xcframework */; };
 		0C5CBD7C2B0EF2CE00FF279F /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5CBD792B0EF27600FF279F /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CB8FB2D2B888E84007CDB50 /* BVPlayerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0CB8FB2C2B888E84007CDB50 /* BVPlayerCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5CBD772B0EF1B900FF279F /* BVPlayerCore in Frameworks */,
+				0CB8FB2D2B888E84007CDB50 /* BVPlayerCore in Frameworks */,
 				0C5CBD7B2B0EF2CE00FF279F /* GoogleCast.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +116,7 @@
 			);
 			name = BasicAudioPlayback;
 			packageProductDependencies = (
-				0C5CBD762B0EF1B900FF279F /* BVPlayerCore */,
+				0CB8FB2C2B888E84007CDB50 /* BVPlayerCore */,
 			);
 			productName = BasicAudioPlayback;
 			productReference = 0C5CBD542B0EDE2A00FF279F /* BasicAudioPlayback.app */;
@@ -147,7 +147,7 @@
 			);
 			mainGroup = 0C5CBD4B2B0EDE2A00FF279F;
 			packageReferences = (
-				0C5CBD752B0EF1B900FF279F /* XCRemoteSwiftPackageReference "bvplayer-ios-core" */,
+				0CB8FB2B2B888E84007CDB50 /* XCRemoteSwiftPackageReference "bvplayer-ios-core" */,
 			);
 			productRefGroup = 0C5CBD552B0EDE2A00FF279F /* Products */;
 			projectDirPath = "";
@@ -403,20 +403,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0C5CBD752B0EF1B900FF279F /* XCRemoteSwiftPackageReference "bvplayer-ios-core" */ = {
+		0CB8FB2B2B888E84007CDB50 /* XCRemoteSwiftPackageReference "bvplayer-ios-core" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/BlendVision/bvplayer-ios-core";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.0;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0C5CBD762B0EF1B900FF279F /* BVPlayerCore */ = {
+		0CB8FB2C2B888E84007CDB50 /* BVPlayerCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0C5CBD752B0EF1B900FF279F /* XCRemoteSwiftPackageReference "bvplayer-ios-core" */;
+			package = 0CB8FB2B2B888E84007CDB50 /* XCRemoteSwiftPackageReference "bvplayer-ios-core" */;
 			productName = BVPlayerCore;
 		};
 /* End XCSwiftPackageProductDependency section */
