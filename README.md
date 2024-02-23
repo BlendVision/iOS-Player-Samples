@@ -18,18 +18,14 @@ The iOS Player SDK, called UniPlayer provides convenient API about DRM, media co
 ## Dependencies & Installation
 In order to use BV iOS PalyerSDK package, please go in your project settings in Xcode > Package Dependencies tab and click on the "+" icon to add a new dependency.
 
-**Required framework packages**
-- SwiftWebVTT
-- HLSParser
-
 If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `BVPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `BVPlayer-latestverions－WOPSE.xcframework` SDK package.
 
 If you want have Google casting feature, please refer [GoogleCast with Guest Mode](https://developers.google.com/cast/docs/ios_sender) to setup.
 
-To add the [BVPLAYER](https://github.com/BlendVision/bvplayer-ios) SDK as a dependency to your project, you have two options:
+To add the [BVPLAYER](https://github.com/BlendVision/iOS-Player-SDK) SDK as a dependency to your project, you have two options:
 - Swift Package Manager
 - Adding the SDK bundle directly
-Please refer to [BVPlayer installation guild](https://github.com/BlendVision/bvplayer-ios) for more details.
+Please refer to [BVPlayer installation guild](https://github.com/BlendVision/iOS-Player-SDK) for more details.
 
 ## How to initialize player (with import BV One license key)
 ```
