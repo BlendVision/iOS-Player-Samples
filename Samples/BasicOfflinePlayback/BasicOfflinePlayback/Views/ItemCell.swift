@@ -5,7 +5,7 @@
 //  Created by Tsung Cheng Lo on 2024/1/5.
 //
 
-import KKSPlayer
+import BVPlayer
 import UIKit
 
 final class ItemCell: UITableViewCell {

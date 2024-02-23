@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import KKSPlayer
+import BVPlayer
 
 final class ViewModel {
     private var sections: [SourceConfigSection]
