@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import KKSPlayer
+import BVPlayer
 import GoogleCast
 
 @main

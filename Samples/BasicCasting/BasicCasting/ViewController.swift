@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import KKSPlayer
+import BVPlayer
 
 struct WidevineMaker {
 
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "your player license key"
+        playerConfig.key = "Your-License-Key"
         
         playerConfig.remoteControlConfig.prepareSource = { type, sourceConfig in
             switch type {
