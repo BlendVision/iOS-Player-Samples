@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import KKSPlayer
+import BVPlayer
 
 class ViewController: UIViewController {
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "78226bd9-01e7-45c3-9d53-b03d02d15d3b"
+        playerConfig.key = "Your-License-Key"
         
         // Create player based on player config
         player = UniPlayerFactory.create(player: playerConfig)

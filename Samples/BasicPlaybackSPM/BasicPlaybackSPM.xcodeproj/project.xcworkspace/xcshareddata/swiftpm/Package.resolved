@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "bvplayer-ios",
+      "identity" : "bvplayer-ios-core",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/BlendVision/bvplayer-ios",
+      "location" : "https://github.com/BlendVision/bvplayer-ios-core",
       "state" : {
-        "revision" : "91c620f33a93d8ec116aaf3d4254d498359e0e31",
-        "version" : "2.5.0"
+        "revision" : "0a47d65cb6daed2a168347970d2669aad50e5525",
+        "version" : "3.0.0"
       }
     }
   ],
