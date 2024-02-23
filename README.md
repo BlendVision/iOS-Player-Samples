@@ -9,8 +9,8 @@ The iOS Player SDK, called UniPlayer provides convenient API about DRM, media co
 
 |  OS Archs**                 | iOS (arm64) | Simulator (arm64-M1) | Simulator (x86_64-Intel)
 |  :----                      | :----:      | :----:               | :----:
-| KKSPlayer.xcframework	      | ✔           | ✘                    | ✔
-| KKSPlayer_WOPSE.xcframework	| ✔           | ✔                    | ✔
+| BVPlayer.xcframework	      | ✔           | ✘                    | ✔
+| BVPlayer_WOPSE.xcframework	| ✔           | ✔                    | ✔
 
 
 
@@ -22,7 +22,7 @@ In order to use BV iOS PalyerSDK package, please go in your project settings in 
 - SwiftWebVTT
 - HLSParser
 
-If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `KKSPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `KKSPlayer-latestverions－WOPSE.xcframework` SDK package.
+If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `BVPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `BVPlayer-latestverions－WOPSE.xcframework` SDK package.
 
 If you want have Google casting feature, please refer [GoogleCast with Guest Mode](https://developers.google.com/cast/docs/ios_sender) to setup.
 
