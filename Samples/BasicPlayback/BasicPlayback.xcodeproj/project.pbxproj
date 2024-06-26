@@ -15,14 +15,6 @@
 		0C936A172A5E41D900B44C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C936A152A5E41D900B44C24 /* LaunchScreen.storyboard */; };
 		0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; };
 		0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C936A2C2A5E42FF00B44C24 /* GPUImage_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */; };
-		0C936A2D2A5E42FF00B44C24 /* GPUImage_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C936A2E2A5E430100B44C24 /* HLSParser.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A212A5E42EF00B44C24 /* HLSParser.xcframework */; };
-		0C936A2F2A5E430100B44C24 /* HLSParser.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A212A5E42EF00B44C24 /* HLSParser.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C936A302A5E430200B44C24 /* KKSPlayer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A1F2A5E42EE00B44C24 /* KKSPlayer.xcframework */; };
-		0C936A312A5E430200B44C24 /* KKSPlayer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A1F2A5E42EE00B44C24 /* KKSPlayer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C936A322A5E430300B44C24 /* SwiftWebVTT.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A232A5E42EF00B44C24 /* SwiftWebVTT.xcframework */; };
-		0C936A332A5E430300B44C24 /* SwiftWebVTT.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A232A5E42EF00B44C24 /* SwiftWebVTT.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,11 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C936A2F2A5E430100B44C24 /* HLSParser.xcframework in Embed Frameworks */,
 				0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */,
-				0C936A332A5E430300B44C24 /* SwiftWebVTT.xcframework in Embed Frameworks */,
-				0C936A312A5E430200B44C24 /* KKSPlayer.xcframework in Embed Frameworks */,
-				0C936A2D2A5E42FF00B44C24 /* GPUImage_iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,11 +40,7 @@
 		0C936A132A5E41D900B44C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C936A162A5E41D900B44C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C936A182A5E41D900B44C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C936A1F2A5E42EE00B44C24 /* KKSPlayer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KKSPlayer.xcframework; sourceTree = "<group>"; };
 		0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
-		0C936A212A5E42EF00B44C24 /* HLSParser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = HLSParser.xcframework; sourceTree = "<group>"; };
-		0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage_iOS.framework; sourceTree = "<group>"; };
-		0C936A232A5E42EF00B44C24 /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SwiftWebVTT.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C936A2E2A5E430100B44C24 /* HLSParser.xcframework in Frameworks */,
-				0C936A2C2A5E42FF00B44C24 /* GPUImage_iOS.framework in Frameworks */,
-				0C936A322A5E430300B44C24 /* SwiftWebVTT.xcframework in Frameworks */,
 				0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */,
-				0C936A302A5E430200B44C24 /* KKSPlayer.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */,
-				0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */,
-				0C936A212A5E42EF00B44C24 /* HLSParser.xcframework */,
-				0C936A1F2A5E42EE00B44C24 /* KKSPlayer.xcframework */,
-				0C936A232A5E42EF00B44C24 /* SwiftWebVTT.xcframework */,
 			);
 			path = frameworks;
 			sourceTree = "<group>";
