@@ -15,6 +15,7 @@
 		0C936A172A5E41D900B44C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C936A152A5E41D900B44C24 /* LaunchScreen.storyboard */; };
 		0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; };
 		0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3BEBAAD2C2C01DC009E9F04 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3BEBAAC2C2C01DC009E9F04 /* BVPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */,
+				A3BEBAAD2C2C01DC009E9F04 /* BVPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +113,9 @@
 			dependencies = (
 			);
 			name = BasicPlayback;
+			packageProductDependencies = (
+				A3BEBAAC2C2C01DC009E9F04 /* BVPlayer */,
+			);
 			productName = BasicPlayback;
 			productReference = 0C936A072A5E41D700B44C24 /* BasicPlayback.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 0C9369FE2A5E41D700B44C24;
+			packageReferences = (
+				A3BEBAAB2C2C01DC009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */,
+			);
 			productRefGroup = 0C936A082A5E41D700B44C24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -394,6 +402,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3BEBAAB2C2C01DC009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BlendVision/bvplayer-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3BEBAAC2C2C01DC009E9F04 /* BVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3BEBAAB2C2C01DC009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */;
+			productName = BVPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C9369FF2A5E41D700B44C24 /* Project object */;
 }
