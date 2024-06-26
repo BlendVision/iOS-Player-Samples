@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C5791472B96AD6500D15034 /* BVPlayerLite in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5791462B96AD6500D15034 /* BVPlayerLite */; };
+		0C3E86EE2C2AFFB70049A6AA /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0C3E86ED2C2AFFB70049A6AA /* BVPlayer */; };
+		0C3E86F12C2BC36A0049A6AA /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0C3E86F02C2BC36A0049A6AA /* BVPlayer */; };
 		0C936A0B2A5E41D700B44C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C936A0A2A5E41D700B44C24 /* AppDelegate.swift */; };
 		0C936A0D2A5E41D700B44C24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C936A0C2A5E41D700B44C24 /* SceneDelegate.swift */; };
 		0C936A0F2A5E41D700B44C24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C936A0E2A5E41D700B44C24 /* ViewController.swift */; };
@@ -16,8 +17,6 @@
 		0C936A172A5E41D900B44C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C936A152A5E41D900B44C24 /* LaunchScreen.storyboard */; };
 		0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; };
 		0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C936A2C2A5E42FF00B44C24 /* GPUImage_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */; };
-		0C936A2D2A5E42FF00B44C24 /* GPUImage_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +27,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */,
-				0C936A2D2A5E42FF00B44C24 /* GPUImage_iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,11 +43,6 @@
 		0C936A162A5E41D900B44C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C936A182A5E41D900B44C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
-		0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage_iOS.framework; sourceTree = "<group>"; };
-		0C9A60F22A6F66F1003093DE /* HLSParser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HLSParser.xcframework; path = "../../../../../Library/Developer/Xcode/DerivedData/BasicPlaybackSPM-emlslmfukymdjydeshqcwjfrqhhi/SourcePackages/checkouts/bvplayer-ios/Sources/BVPlayer/SDKs/HLSParser.xcframework"; sourceTree = "<group>"; };
-		0C9A60F52A6F66F4003093DE /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftWebVTT.xcframework; path = "../../../../../Library/Developer/Xcode/DerivedData/BasicPlaybackSPM-emlslmfukymdjydeshqcwjfrqhhi/SourcePackages/checkouts/bvplayer-ios/Sources/BVPlayer/SDKs/SwiftWebVTT.xcframework"; sourceTree = "<group>"; };
-		0CFC72722A6E6D470060FAE3 /* HLSParser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HLSParser.xcframework; path = "../../../bvGitHub/bvplayer-ios/Sources/BVPlayer/SDKs/HLSParser.xcframework"; sourceTree = "<group>"; };
-		0CFC72752A6E6D490060FAE3 /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftWebVTT.xcframework; path = "../../../bvGitHub/bvplayer-ios/Sources/BVPlayer/SDKs/SwiftWebVTT.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C936A2C2A5E42FF00B44C24 /* GPUImage_iOS.framework in Frameworks */,
-				0C5791472B96AD6500D15034 /* BVPlayerLite in Frameworks */,
 				0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */,
+				0C3E86F12C2BC36A0049A6AA /* BVPlayer in Frameworks */,
+				0C3E86EE2C2AFFB70049A6AA /* BVPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +64,6 @@
 			children = (
 				0C936A092A5E41D700B44C24 /* BasicPlayback */,
 				0C936A082A5E41D700B44C24 /* Products */,
-				0CFC724A2A6A80AA0060FAE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,20 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */,
-				0C936A222A5E42EF00B44C24 /* GPUImage_iOS.framework */,
 			);
 			path = frameworks;
-			sourceTree = "<group>";
-		};
-		0CFC724A2A6A80AA0060FAE3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0CFC72722A6E6D470060FAE3 /* HLSParser.xcframework */,
-				0CFC72752A6E6D490060FAE3 /* SwiftWebVTT.xcframework */,
-				0C9A60F22A6F66F1003093DE /* HLSParser.xcframework */,
-				0C9A60F52A6F66F4003093DE /* SwiftWebVTT.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +116,8 @@
 			);
 			name = BasicPlaybackSPM;
 			packageProductDependencies = (
-				0C5791462B96AD6500D15034 /* BVPlayerLite */,
+				0C3E86ED2C2AFFB70049A6AA /* BVPlayer */,
+				0C3E86F02C2BC36A0049A6AA /* BVPlayer */,
 			);
 			productName = BasicPlayback;
 			productReference = 0C936A072A5E41D700B44C24 /* BasicPlaybackSPM.app */;
@@ -167,7 +148,7 @@
 			);
 			mainGroup = 0C9369FE2A5E41D700B44C24;
 			packageReferences = (
-				0C5791452B96AD6500D15034 /* XCRemoteSwiftPackageReference "iOS-Player-SDK-Lite" */,
+				0C3E86EF2C2BC36A0049A6AA /* XCRemoteSwiftPackageReference "iOS-Player-SDK" */,
 			);
 			productRefGroup = 0C936A082A5E41D700B44C24 /* Products */;
 			projectDirPath = "";
@@ -426,21 +407,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0C5791452B96AD6500D15034 /* XCRemoteSwiftPackageReference "iOS-Player-SDK-Lite" */ = {
+		0C3E86EF2C2BC36A0049A6AA /* XCRemoteSwiftPackageReference "iOS-Player-SDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/BlendVision/iOS-Player-SDK-Lite";
+			repositoryURL = "https://github.com/BlendVision/iOS-Player-SDK";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.1;
+				minimumVersion = 3.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0C5791462B96AD6500D15034 /* BVPlayerLite */ = {
+		0C3E86ED2C2AFFB70049A6AA /* BVPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0C5791452B96AD6500D15034 /* XCRemoteSwiftPackageReference "iOS-Player-SDK-Lite" */;
-			productName = BVPlayerLite;
+			productName = BVPlayer;
+		};
+		0C3E86F02C2BC36A0049A6AA /* BVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C3E86EF2C2BC36A0049A6AA /* XCRemoteSwiftPackageReference "iOS-Player-SDK" */;
+			productName = BVPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
