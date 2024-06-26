@@ -1,14 +1,15 @@
 {
+  "originHash" : "9652794385da98cecb45120676f811dfffb411c2dfeffeb4fa73c7f9d917c0f5",
   "pins" : [
     {
-      "identity" : "ios-player-sdk-lite",
+      "identity" : "ios-player-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/BlendVision/iOS-Player-SDK-Lite",
+      "location" : "https://github.com/BlendVision/iOS-Player-SDK",
       "state" : {
-        "revision" : "a1cb07a35343a51905c4a55af68917aefe5935e2",
-        "version" : "3.0.1"
+        "revision" : "cba5da9d910f4dddd7f5a5722c4df1febe449e24",
+        "version" : "3.2.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
