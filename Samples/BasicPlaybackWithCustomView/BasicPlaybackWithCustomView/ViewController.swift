@@ -6,7 +6,7 @@
 //
 
 import AVKit
-import KKSPlayer
+import BVPlayer
 
 class CustomView: UIView {
     init(player: UniPlayer, frame: CGRect) {
