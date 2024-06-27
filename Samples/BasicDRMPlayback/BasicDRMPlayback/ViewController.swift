@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         
         playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         playerView.frame = view.bounds
+        playerView.add(listener: self)
         
         view.addSubview(playerView)
         view.bringSubviewToFront(playerView)
@@ -84,5 +85,24 @@ extension ViewController: UniPlayerListener {
     func player(_ player: UniPlayer, didReceiveOnEvent event: UniEvent) {
         // Uncomment the following line to observe the event of player
         // debugPrint("event=\(event)")
+    }
+}
+
+extension ViewController: UniUserInterfaceListener {
+    
+    func playerView(_ view: UniPlayerView, didReceiveSettingPressed event: UniUIEvent) {
+
+        if #available(iOS 15.0, *) {
+            let navController = UniSheetPresentationController(
+                rootViewController: UniSettingViewController(player: player)
+            )
+            present(navController, animated: true)
+        } else {
+            // Fallback on earlier versions
+            let navController = UINavigationController(
+                rootViewController: UniSettingViewController(player: player)
+            )
+            present(navController, animated: true)
+        }
     }
 }
