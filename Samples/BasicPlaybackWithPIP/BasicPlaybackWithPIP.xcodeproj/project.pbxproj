@@ -15,7 +15,7 @@
 		0C936A172A5E41D900B44C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C936A152A5E41D900B44C24 /* LaunchScreen.storyboard */; };
 		0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; };
 		0C936A2A2A5E42FE00B44C24 /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A3BEBAAD2C2C01DC009E9F04 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3BEBAAC2C2C01DC009E9F04 /* BVPlayer */; };
+		A32349A82C32579F00A8C1E2 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A32349A72C32579F00A8C1E2 /* BVPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,15 +33,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C936A072A5E41D700B44C24 /* BasicPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C936A072A5E41D700B44C24 /* BasicPlaybackWithPIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPlaybackWithPIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C936A0A2A5E41D700B44C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C936A0C2A5E41D700B44C24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0C936A0E2A5E41D700B44C24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0C936A112A5E41D700B44C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C936A132A5E41D900B44C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C936A162A5E41D900B44C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0C936A182A5E41D900B44C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C936A202A5E42EF00B44C24 /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
+		A3FC4CE02C2E9D6C005F877A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C936A292A5E42FE00B44C24 /* GoogleCast.xcframework in Frameworks */,
-				A3BEBAAD2C2C01DC009E9F04 /* BVPlayer in Frameworks */,
+				A32349A82C32579F00A8C1E2 /* BVPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +68,7 @@
 		0C936A082A5E41D700B44C24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C936A072A5E41D700B44C24 /* BasicPlayback.app */,
+				0C936A072A5E41D700B44C24 /* BasicPlaybackWithPIP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,7 +83,7 @@
 				0C936A102A5E41D700B44C24 /* Main.storyboard */,
 				0C936A132A5E41D900B44C24 /* Assets.xcassets */,
 				0C936A152A5E41D900B44C24 /* LaunchScreen.storyboard */,
-				0C936A182A5E41D900B44C24 /* Info.plist */,
+				A3FC4CE02C2E9D6C005F877A /* Info.plist */,
 			);
 			path = BasicPlaybackWithPIP;
 			sourceTree = "<group>";
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C936A062A5E41D700B44C24 /* BasicPlayback */ = {
+		0C936A062A5E41D700B44C24 /* BasicPlaybackWithPIP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C936A1B2A5E41D900B44C24 /* Build configuration list for PBXNativeTarget "BasicPlayback" */;
+			buildConfigurationList = 0C936A1B2A5E41D900B44C24 /* Build configuration list for PBXNativeTarget "BasicPlaybackWithPIP" */;
 			buildPhases = (
 				0C936A032A5E41D700B44C24 /* Sources */,
 				0C936A042A5E41D700B44C24 /* Frameworks */,
@@ -112,12 +112,12 @@
 			);
 			dependencies = (
 			);
-			name = BasicPlayback;
+			name = BasicPlaybackWithPIP;
 			packageProductDependencies = (
-				A3BEBAAC2C2C01DC009E9F04 /* BVPlayer */,
+				A32349A72C32579F00A8C1E2 /* BVPlayer */,
 			);
 			productName = BasicPlayback;
-			productReference = 0C936A072A5E41D700B44C24 /* BasicPlayback.app */;
+			productReference = 0C936A072A5E41D700B44C24 /* BasicPlaybackWithPIP.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,16 +142,18 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				"zh-Hant",
 			);
 			mainGroup = 0C9369FE2A5E41D700B44C24;
 			packageReferences = (
-				A3BEBAAB2C2C01DC009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */,
+				A32349A62C32579F00A8C1E2 /* XCRemoteSwiftPackageReference "bvplayer-ios" */,
 			);
 			productRefGroup = 0C936A082A5E41D700B44C24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C936A062A5E41D700B44C24 /* BasicPlayback */,
+				0C936A062A5E41D700B44C24 /* BasicPlaybackWithPIP */,
 			);
 		};
 /* End PBXProject section */
@@ -329,7 +331,7 @@
 					"$(PROJECT_DIR)/BasicPlayback/frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BasicPlayback/Info.plist;
+				INFOPLIST_FILE = BasicPlaybackWithPIP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -340,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = KKS.BasicPlayback;
+				PRODUCT_BUNDLE_IDENTIFIER = KKS.BasicPlaybackWithPIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,7 +363,7 @@
 					"$(PROJECT_DIR)/BasicPlayback/frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BasicPlayback/Info.plist;
+				INFOPLIST_FILE = BasicPlaybackWithPIP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -372,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = KKS.BasicPlayback;
+				PRODUCT_BUNDLE_IDENTIFIER = KKS.BasicPlaybackWithPIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -392,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C936A1B2A5E41D900B44C24 /* Build configuration list for PBXNativeTarget "BasicPlayback" */ = {
+		0C936A1B2A5E41D900B44C24 /* Build configuration list for PBXNativeTarget "BasicPlaybackWithPIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C936A1C2A5E41D900B44C24 /* Debug */,
@@ -404,7 +406,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A3BEBAAB2C2C01DC009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */ = {
+		A32349A62C32579F00A8C1E2 /* XCRemoteSwiftPackageReference "bvplayer-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/BlendVision/bvplayer-ios";
 			requirement = {
@@ -415,9 +417,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A3BEBAAC2C2C01DC009E9F04 /* BVPlayer */ = {
+		A32349A72C32579F00A8C1E2 /* BVPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A3BEBAAB2C2C01DC009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */;
+			package = A32349A62C32579F00A8C1E2 /* XCRemoteSwiftPackageReference "bvplayer-ios" */;
 			productName = BVPlayer;
 		};
 /* End XCSwiftPackageProductDependency section */
