@@ -7,6 +7,7 @@
 
 import UIKit
 import BVPlayer
+import AVFoundation
 
 /// To use Picture in Picture (PIP) on iOS, the app needs to be configured in two ways, and users need to enable PIP in their settings.
 /// 1. Add Background Modes and check "Audio, Airplay, and Picture in Picture"
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "your-license-key"
+        playerConfig.key = "8895d63a-b150-46d3-bcdb-8c164f9ceb57"
         
         // Create player based on player config
         player = UniPlayerFactory.create(player: playerConfig)
@@ -39,6 +40,9 @@ class ViewController: UIViewController {
         // Create player view config and enable PIP feature
         var playerViewConfig = PlayerViewConfig()
         playerViewConfig.pictureInPictureConfig.isEnabled = true
+        
+        // Set up AVAudioSession for PIP
+        setUpAVAudioSession()
        
         // Create player view and pass the player instance to it
         let playerView = UniPlayerView(player: player, frame: .zero, playerViewConfig: playerViewConfig)
@@ -58,6 +62,15 @@ class ViewController: UIViewController {
         // Create source config
         let sourceConfig = UniSourceConfig(url: streamUrl, type: .hls)
         player.load(sourceConfig: sourceConfig)
+    }
+    
+    private func setUpAVAudioSession() {
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            try audioSession.setCategory(AVAudioSession.Category.playback)
+        } catch {
+            print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
     }
 }
 
