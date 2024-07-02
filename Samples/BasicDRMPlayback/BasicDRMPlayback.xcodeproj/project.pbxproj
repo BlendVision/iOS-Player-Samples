@@ -9,20 +9,13 @@
 /* Begin PBXBuildFile section */
 		0C351DF32AE23207005C99BD /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */; };
 		0C351DF42AE23207005C99BD /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C351DF52AE2320A005C99BD /* GPUImage_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DED2AE231FE005C99BD /* GPUImage_iOS.framework */; };
-		0C351DF62AE2320A005C99BD /* GPUImage_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DED2AE231FE005C99BD /* GPUImage_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C351DF72AE2320C005C99BD /* KKSPlayer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEC2AE231FE005C99BD /* KKSPlayer.xcframework */; };
-		0C351DF82AE2320C005C99BD /* KKSPlayer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEC2AE231FE005C99BD /* KKSPlayer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C351DF92AE23323005C99BD /* SwiftWebVTT.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEB2AE231FE005C99BD /* SwiftWebVTT.xcframework */; };
-		0C351DFA2AE23323005C99BD /* SwiftWebVTT.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEB2AE231FE005C99BD /* SwiftWebVTT.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0C351DFB2AE23327005C99BD /* HLSParser.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DE92AE231FE005C99BD /* HLSParser.xcframework */; };
-		0C351DFC2AE23327005C99BD /* HLSParser.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DE92AE231FE005C99BD /* HLSParser.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CC7FEDA2AE2155100E80C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC7FED92AE2155100E80C5F /* AppDelegate.swift */; };
 		0CC7FEDC2AE2155100E80C5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC7FEDB2AE2155100E80C5F /* SceneDelegate.swift */; };
 		0CC7FEDE2AE2155100E80C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC7FEDD2AE2155100E80C5F /* ViewController.swift */; };
 		0CC7FEE12AE2155100E80C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7FEDF2AE2155100E80C5F /* Main.storyboard */; };
 		0CC7FEE32AE2155200E80C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7FEE22AE2155200E80C5F /* Assets.xcassets */; };
 		0CC7FEE62AE2155200E80C5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC7FEE42AE2155200E80C5F /* LaunchScreen.storyboard */; };
+		A3BEBAB02C2C0C5D009E9F04 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3BEBAAF2C2C0C5D009E9F04 /* BVPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,11 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C351DFC2AE23327005C99BD /* HLSParser.xcframework in Embed Frameworks */,
 				0C351DF42AE23207005C99BD /* GoogleCast.xcframework in Embed Frameworks */,
-				0C351DF82AE2320C005C99BD /* KKSPlayer.xcframework in Embed Frameworks */,
-				0C351DF62AE2320A005C99BD /* GPUImage_iOS.framework in Embed Frameworks */,
-				0C351DFA2AE23323005C99BD /* SwiftWebVTT.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,11 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C351DE92AE231FE005C99BD /* HLSParser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = HLSParser.xcframework; sourceTree = "<group>"; };
 		0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
-		0C351DEB2AE231FE005C99BD /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SwiftWebVTT.xcframework; sourceTree = "<group>"; };
-		0C351DEC2AE231FE005C99BD /* KKSPlayer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KKSPlayer.xcframework; sourceTree = "<group>"; };
-		0C351DED2AE231FE005C99BD /* GPUImage_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage_iOS.framework; sourceTree = "<group>"; };
 		0C351E5E2AE277FC005C99BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0CC7FED62AE2155100E80C5F /* BasicDRMPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDRMPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC7FED92AE2155100E80C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +43,6 @@
 		0CC7FEE22AE2155200E80C5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC7FEE52AE2155200E80C5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC7FEE72AE2155200E80C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CC7FEF62AE2176E00E80C5F /* HLSParser.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = HLSParser.xcframework; path = "../../../../../Library/Developer/Xcode/DerivedData/BasicDRMPlayback-aqfvqkhenahidrczqwpdjdtgrmej/SourcePackages/checkouts/bvplayer-ios-core/Sources/BVPlayer/SDKs/HLSParser.xcframework"; sourceTree = "<group>"; };
-		0CC7FEF92AE2177100E80C5F /* SwiftWebVTT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftWebVTT.xcframework; path = "../../../../../Library/Developer/Xcode/DerivedData/BasicDRMPlayback-aqfvqkhenahidrczqwpdjdtgrmej/SourcePackages/checkouts/bvplayer-ios-core/Sources/BVPlayer/SDKs/SwiftWebVTT.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C351DFB2AE23327005C99BD /* HLSParser.xcframework in Frameworks */,
 				0C351DF32AE23207005C99BD /* GoogleCast.xcframework in Frameworks */,
-				0C351DF52AE2320A005C99BD /* GPUImage_iOS.framework in Frameworks */,
-				0C351DF72AE2320C005C99BD /* KKSPlayer.xcframework in Frameworks */,
-				0C351DF92AE23323005C99BD /* SwiftWebVTT.xcframework in Frameworks */,
+				A3BEBAB02C2C0C5D009E9F04 /* BVPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,11 +61,7 @@
 		0C351DE82AE231FE005C99BD /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C351DE92AE231FE005C99BD /* HLSParser.xcframework */,
 				0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */,
-				0C351DEB2AE231FE005C99BD /* SwiftWebVTT.xcframework */,
-				0C351DEC2AE231FE005C99BD /* KKSPlayer.xcframework */,
-				0C351DED2AE231FE005C99BD /* GPUImage_iOS.framework */,
 			);
 			path = frameworks;
 			sourceTree = "<group>";
@@ -96,7 +72,6 @@
 				0C351E5E2AE277FC005C99BD /* README.md */,
 				0CC7FED82AE2155100E80C5F /* BasicDRMPlayback */,
 				0CC7FED72AE2155100E80C5F /* Products */,
-				0CC7FEF52AE2176E00E80C5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,15 +98,6 @@
 			path = BasicDRMPlayback;
 			sourceTree = "<group>";
 		};
-		0CC7FEF52AE2176E00E80C5F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0CC7FEF62AE2176E00E80C5F /* HLSParser.xcframework */,
-				0CC7FEF92AE2177100E80C5F /* SwiftWebVTT.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +116,7 @@
 			);
 			name = BasicDRMPlayback;
 			packageProductDependencies = (
+				A3BEBAAF2C2C0C5D009E9F04 /* BVPlayer */,
 			);
 			productName = BasicDRMPlayback;
 			productReference = 0CC7FED62AE2155100E80C5F /* BasicDRMPlayback.app */;
@@ -180,6 +147,7 @@
 			);
 			mainGroup = 0CC7FECD2AE2155100E80C5F;
 			packageReferences = (
+				A3BEBAAE2C2C0C5D009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */,
 			);
 			productRefGroup = 0CC7FED72AE2155100E80C5F /* Products */;
 			projectDirPath = "";
@@ -441,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3BEBAAE2C2C0C5D009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BlendVision/bvplayer-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3BEBAAF2C2C0C5D009E9F04 /* BVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3BEBAAE2C2C0C5D009E9F04 /* XCRemoteSwiftPackageReference "bvplayer-ios" */;
+			productName = BVPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0CC7FECE2AE2155100E80C5F /* Project object */;
 }
