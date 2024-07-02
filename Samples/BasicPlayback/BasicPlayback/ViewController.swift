@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import KKSPlayer
+import BVPlayer
 
 class ViewController: UIViewController {
     
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .black
         
         // Define needed resources
-        guard let streamUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/d65451ac-f080-42c7-b3e2-746c4ca40fa7/vod/hls.m3u8")else {
+        guard let streamUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/87b38a4f-d685-4776-9af7-70cc653d91b9/vod/hls.m3u8")else {
             return
         }
         
@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         
         playerView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         playerView.frame = view.bounds
+        playerView.add(listener: self)
         
         view.addSubview(playerView)
         view.bringSubviewToFront(playerView)
@@ -58,3 +59,24 @@ extension ViewController: UniPlayerListener {
         // debugPrint("event=\(event)")
     }
 }
+
+extension ViewController: UniUserInterfaceListener {
+    
+    func playerView(_ view: UniPlayerView, didReceiveSettingPressed event: UniUIEvent) {
+
+        if #available(iOS 15.0, *) {
+            let navController = UniSheetPresentationController(
+                rootViewController: UniSettingViewController(player: player)
+            )
+            present(navController, animated: true)
+        } else {
+            // Fallback on earlier versions
+            let navController = UINavigationController(
+                rootViewController: UniSettingViewController(player: player)
+            )
+            present(navController, animated: true)
+        }
+    }
+}
+
+
