@@ -12,12 +12,13 @@ To use the PIP functionality, follow these steps:
     
 2. Configure the audio session:
     Specify the audio session category to the playback category. Enabling this category means your app can play background audio if you’re using the Audio, AirPlay, and Picture in Picture.
+    You can activate the audio session at any time after setting its category, but it’s recommended to defer this call until your app begins audio playback.
 
 ```swift
 func configureAudioSession() {
     do {
         let session = AVAudioSession.sharedInstance()
-        // Configure the app for playback of long-form movies.
+        // Configure the app for playback.
         try session.setCategory(.playback)
     } catch {
         // Handle error.
