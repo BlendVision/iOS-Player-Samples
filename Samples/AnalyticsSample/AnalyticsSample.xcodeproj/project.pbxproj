@@ -13,8 +13,6 @@
 		0CCB77312AC5549500B1C8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCB772F2AC5549500B1C8A8 /* Main.storyboard */; };
 		0CCB77332AC5549700B1C8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCB77322AC5549700B1C8A8 /* Assets.xcassets */; };
 		0CCB77362AC5549700B1C8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCB77342AC5549700B1C8A8 /* LaunchScreen.storyboard */; };
-		0CCB77582AC5572200B1C8A8 /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCB774C2AC555C600B1C8A8 /* GoogleCast.xcframework */; };
-		0CCB77592AC5572200B1C8A8 /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCB774C2AC555C600B1C8A8 /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CCB775B2AC558D600B1C8A8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CCB775A2AC558D600B1C8A8 /* README.md */; };
 		A3BEBAB92C2C13CE009E9F04 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3BEBAB82C2C13CE009E9F04 /* BVPlayer */; };
 /* End PBXBuildFile section */
@@ -26,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0CCB77592AC5572200B1C8A8 /* GoogleCast.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +39,6 @@
 		0CCB77322AC5549700B1C8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CCB77352AC5549700B1C8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CCB77372AC5549700B1C8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CCB774C2AC555C600B1C8A8 /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
 		0CCB775A2AC558D600B1C8A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CCB77582AC5572200B1C8A8 /* GoogleCast.xcframework in Frameworks */,
 				A3BEBAB92C2C13CE009E9F04 /* BVPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +74,6 @@
 		0CCB77282AC5549500B1C8A8 /* AnalyticsSample */ = {
 			isa = PBXGroup;
 			children = (
-				0CCB774C2AC555C600B1C8A8 /* GoogleCast.xcframework */,
 				0CCB77292AC5549500B1C8A8 /* AppDelegate.swift */,
 				0CCB772B2AC5549500B1C8A8 /* SceneDelegate.swift */,
 				0CCB772D2AC5549500B1C8A8 /* ViewController.swift */,
