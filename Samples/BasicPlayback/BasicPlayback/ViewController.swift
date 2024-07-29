@@ -22,13 +22,13 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .black
         
         // Define needed resources
-        guard let streamUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/87b38a4f-d685-4776-9af7-70cc653d91b9/vod/hls.m3u8")else {
+        guard let streamUrl = URL(string: "https://d1cv9982pz0jfp.cloudfront.net/llhls/master.m3u8")else {
             return
         }
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "your-license-key"
+        playerConfig.key = "8895d63a-b150-46d3-bcdb-8c164f9ceb57"
         
         // Create player based on player config
         player = UniPlayerFactory.create(player: playerConfig)

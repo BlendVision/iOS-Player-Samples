@@ -1,0 +1,395 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BVUIControls
+import AVKit
+import BVPlayer
+@_exported import BVUIControls
+import CoreMedia
+import DeveloperToolsSupport
+import Foundation
+import GoogleCast
+import MediaPlayer
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct CastConstant {
+  public static var kReceiverAppID: Swift.String {
+    get
+  }
+}
+extension BVUIControls.UniPlayerView : BVPlayer.UniPlayerListener {
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnPlayingEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnPausedEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnSubtitleChangedEvent event: BVPlayer.UniSubtitleChangedEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnSeekEvent event: BVPlayer.UniSeekEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnSeekedEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnStallStartedEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnStallEndedEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnPlaybackFinishedEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnSourceLoadEvent event: BVPlayer.UniSourceLoadEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnAudioChangedEvent event: BVPlayer.UniAudioChangedEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceivePlaybackSpeedChangedEvent event: BVPlayer.UniPlaybackSpeedChangedEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveSourceUnloadEvent event: BVPlayer.UniSourceUnloadEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveSourceUnloadedEvent event: BVPlayer.UniSourceUnloadedEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveSourceErrorEvent event: BVPlayer.UniSourceErrorEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveErrorEvent event: BVPlayer.UniPlayerErrorEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveTimeShiftedEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveLoadedTimeChangedEvent event: BVPlayer.UniLoadedTimeRangeChangedEvent)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class UniPlayerControlView : UIKit.UIView {
+  @objc deinit
+}
+public enum UniUIEventName : Swift.String {
+  case unknown
+  case settingPressed
+  case controlViewChanged
+  case infoPressed
+  case sharePressed
+  case pictureInPictureEnter
+  case pictureInPictureEntered
+  case pictureInPictureExit
+  case pictureInPictureExited
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol UniUIEventProtocol {
+  var timestamp: Foundation.TimeInterval { get }
+  var name: BVUIControls.UniUIEventName { get }
+}
+@_hasMissingDesignatedInitializers public class UniUIEvent : BVUIControls.UniUIEventProtocol {
+  final public let timestamp: Foundation.TimeInterval
+  public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UniSettingPressedEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UniControlViewChangedEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UniInfoPressedEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UniSharePressedEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  final public let sharedURL: Foundation.URL?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PictureInPictureEnterEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PictureInPictureEnteredEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PictureInPictureExitEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PictureInPictureExitedEvent : BVUIControls.UniUIEvent {
+  override public var name: BVUIControls.UniUIEventName {
+    get
+  }
+  @objc deinit
+}
+public protocol UniUserInterfaceListener : ObjectiveC.NSObjectProtocol {
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceiveSettingPressed event: BVUIControls.UniUIEvent)
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceiveControlViewChanged event: BVUIControls.UniControlViewChangedEvent)
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceiveInfoPressed event: BVUIControls.UniUIEvent)
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceiveSharePressed event: BVUIControls.UniSharePressedEvent)
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureEnter event: BVUIControls.PictureInPictureEnterEvent)
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureEntered event: BVUIControls.PictureInPictureEnteredEvent)
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureExit event: BVUIControls.PictureInPictureExitEvent)
+  func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureExited event: BVUIControls.PictureInPictureExitedEvent)
+}
+extension BVUIControls.UniUserInterfaceListener {
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceiveSettingPressed event: BVUIControls.UniUIEvent)
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceiveControlViewChanged event: BVUIControls.UniControlViewChangedEvent)
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceiveInfoPressed event: BVUIControls.UniUIEvent)
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceiveSharePressed event: BVUIControls.UniSharePressedEvent)
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureEnter event: BVUIControls.PictureInPictureEnterEvent)
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureEntered event: BVUIControls.PictureInPictureEnteredEvent)
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureExit event: BVUIControls.PictureInPictureExitEvent)
+  public func playerView(_ view: BVUIControls.UniPlayerView, didReceivePictureInPictureExited event: BVUIControls.PictureInPictureExitedEvent)
+}
+public struct PlayerViewConfig {
+  public var pictureInPictureConfig: BVUIControls.PictureInPictureConfig
+  public init()
+}
+public protocol UniPlayerViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  func playerViewController(_ controller: BVUIControls.UniPlayerViewController, didTapShareButtonWithURL url: Foundation.URL?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UniPlayerViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var player: BVPlayer.UniPlayer?
+  @_Concurrency.MainActor(unsafe) public var sourceConfig: BVPlayer.UniSourceConfig?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any BVUIControls.UniPlayerViewControllerDelegate)?
+  @_Concurrency.MainActor(unsafe) public var playerView: BVUIControls.UniPlayerView?
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func makeView(with player: BVPlayer.UniPlayer, playerViewConfig: BVUIControls.PlayerViewConfig) -> BVUIControls.UniPlayerView
+  @_Concurrency.MainActor(unsafe) open func playerView(_ view: BVUIControls.UniPlayerView, didReceiveSettingPressed event: BVUIControls.UniUIEvent)
+  @_Concurrency.MainActor(unsafe) open func dismiss(completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension BVUIControls.UniPlayerViewController {
+  @_Concurrency.MainActor(unsafe) public func load()
+}
+extension BVUIControls.UniPlayerViewController : BVUIControls.UniUserInterfaceListener {
+  @_Concurrency.MainActor(unsafe) public func playerView(_ view: BVUIControls.UniPlayerView, didReceiveControlViewChanged event: BVUIControls.UniControlViewChangedEvent)
+}
+extension BVUIControls.UniPlayerViewController : UIKit.UIAdaptivePresentationControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func presentationControllerDidDismiss(_ presentationController: UIKit.UIPresentationController)
+}
+extension BVUIControls.UniPlayerViewController : BVUIControls.CastManagerListener {
+  @_Concurrency.MainActor(unsafe) public func applicationRequestDidComplete(_ deviceName: Swift.String)
+}
+public protocol CastManagerListener : ObjectiveC.NSObjectProtocol {
+  func updatedMediaStatus(_ mediaStatus: GoogleCast.GCKMediaStatus?)
+  func updatedMediaMetadata(_ mediaMetadata: GoogleCast.GCKMediaMetadata)
+  func applicationWillConnect(_ deviceName: Swift.String)
+  func applicationConnected(_ deviceName: Swift.String)
+  func applicationDisconnected()
+  func applicationDidFailToStart(_ error: any Swift.Error)
+  func applicationRequestDidComplete(_ deviceName: Swift.String)
+}
+extension BVUIControls.CastManagerListener {
+  public func updatedMediaStatus(_ mediaStatus: GoogleCast.GCKMediaStatus?)
+  public func updatedMediaMetadata(_ mediaMetadata: GoogleCast.GCKMediaMetadata)
+  public func applicationWillConnect(_ deviceName: Swift.String)
+  public func applicationConnected(_ deviceName: Swift.String)
+  public func applicationDisconnected()
+  public func applicationDidFailToStart(_ error: any Swift.Error)
+  public func applicationRequestDidComplete(_ deviceName: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CastManager : ObjectiveC.NSObject {
+  public static let shared: BVUIControls.CastManager
+  public static func initializeCasting()
+  public static func initializeCasting(options: BVUIControls.CastManagerOptions)
+  public var isConnecting: Swift.Bool {
+    get
+  }
+  public var isConnected: Swift.Bool {
+    get
+  }
+  public var currentDevice: GoogleCast.GCKDevice?
+  public var currentMediaMetadata: GoogleCast.GCKMediaMetadata? {
+    get
+    set
+  }
+  public var currentMediaStatus: GoogleCast.GCKMediaStatus? {
+    get
+    set
+  }
+  public func add(listener: any BVUIControls.CastManagerListener)
+  public func remove(listener: any BVUIControls.CastManagerListener)
+  public func unload()
+  public func loadMedia(_ sourceConfig: BVPlayer.UniSourceConfig)
+  public func checkReceiverIsPlayingSameContent(_ sourceConfig: BVPlayer.UniSourceConfig) -> Swift.Bool
+  @objc deinit
+}
+extension BVUIControls.CastManager : GoogleCast.GCKSessionManagerListener {
+  @objc dynamic public func sessionManager(_ sessionManager: GoogleCast.GCKSessionManager, didFailToStart session: GoogleCast.GCKCastSession, withError error: any Swift.Error)
+  @objc dynamic public func sessionManager(_ sessionManager: GoogleCast.GCKSessionManager, willStart session: GoogleCast.GCKCastSession)
+  @objc dynamic public func sessionManager(_ sessionManager: GoogleCast.GCKSessionManager, didStart session: GoogleCast.GCKCastSession)
+  @objc dynamic public func sessionManager(_ sessionManager: GoogleCast.GCKSessionManager, willResumeCastSession session: GoogleCast.GCKCastSession)
+  @objc dynamic public func sessionManager(_ sessionManager: GoogleCast.GCKSessionManager, didResumeCastSession session: GoogleCast.GCKCastSession)
+  @objc dynamic public func sessionManager(_ sessionManager: GoogleCast.GCKSessionManager, didEnd session: GoogleCast.GCKCastSession, withError error: (any Swift.Error)?)
+  @objc dynamic public func sessionManager(_ sessionManager: GoogleCast.GCKSessionManager, didSuspend session: GoogleCast.GCKCastSession, with reason: GoogleCast.GCKConnectionSuspendReason)
+}
+extension BVUIControls.CastManager : GoogleCast.GCKRemoteMediaClientListener {
+  @objc dynamic public func remoteMediaClient(_ client: GoogleCast.GCKRemoteMediaClient, didUpdate mediaStatus: GoogleCast.GCKMediaStatus?)
+  @objc dynamic public func remoteMediaClient(_ client: GoogleCast.GCKRemoteMediaClient, didUpdate mediaMetadata: GoogleCast.GCKMediaMetadata?)
+}
+extension BVUIControls.CastManager : GoogleCast.GCKRequestDelegate {
+  @objc dynamic public func requestDidComplete(_ request: GoogleCast.GCKRequest)
+  @objc dynamic public func request(_ request: GoogleCast.GCKRequest, didFailWithError error: GoogleCast.GCKError)
+  @objc dynamic public func request(_ request: GoogleCast.GCKRequest, didAbortWith abortReason: GoogleCast.GCKRequestAbortReason)
+}
+@_hasMissingDesignatedInitializers public class BundleInfoProvider {
+  public static let shared: BVUIControls.BundleInfoProvider
+  public var appVersion: Swift.String {
+    get
+  }
+  public var buildVersion: Swift.String {
+    get
+  }
+  public var bundleIdentifier: Swift.String {
+    get
+  }
+  public var appName: Swift.String {
+    get
+  }
+  @objc deinit
+}
+public struct PictureInPictureConfig {
+  public typealias RestoreUserInterfaceHandler = (_ completionHandler: @escaping (_ restored: Swift.Bool) -> Swift.Void) -> Swift.Void
+  public var isEnabled: Swift.Bool
+  @available(tvOS, unavailable)
+  public var showSkipControls: Swift.Bool
+  public var restoreUserInterfaceHandler: BVUIControls.PictureInPictureConfig.RestoreUserInterfaceHandler?
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 15.0, *)
+@_Concurrency.MainActor(unsafe) public class UniSheetPresentationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public init(rootViewController: UIKit.UIViewController, detents: [UIKit.UISheetPresentationController.Detent] = [.medium(), .large()])
+  @objc deinit
+}
+@objc @_Concurrency.MainActor(unsafe) open class UniSettingViewController : BVUIControls.UniUITableViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) public init(player: BVPlayer.UniPlayer)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) open func makeDetailViewController(with config: BVUIControls.UniUISettingConfig) -> BVUIControls.UniSettingDetailViewController
+  @objc deinit
+}
+extension BVUIControls.UniSettingViewController : BVUIControls.UniSettingDetailViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) public func controller(_ controller: BVUIControls.UniSettingDetailViewController, didSelectItem item: BVUIControls.UniUISettingItem)
+  @_Concurrency.MainActor(unsafe) public func controllerDidPop(_ controller: BVUIControls.UniSettingDetailViewController)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UniUITableViewController : UIKit.UITableViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableView.Style)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct UniUISettingFactory {
+  public enum SettingGroup {
+    case quality, audio, subtitle, speed
+    public static func == (a: BVUIControls.UniUISettingFactory.SettingGroup, b: BVUIControls.UniUISettingFactory.SettingGroup) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public struct PosterViewConfig {
+  public var title: Swift.String? {
+    get
+  }
+  public var description: Swift.String? {
+    get
+  }
+  public var posterSource: Foundation.URL? {
+    get
+  }
+  public var sharedUrl: Foundation.URL? {
+    get
+  }
+  public var sourceConfig: BVPlayer.UniSourceConfig
+  public init(source config: BVPlayer.UniSourceConfig)
+}
+@objc @_Concurrency.MainActor(unsafe) open class UniPlayerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var isPictureInPicture: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var isPictureInPictureAvailable: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var styleConfig: BVPlayer.UniStyleConfig
+  @_Concurrency.MainActor(unsafe) public var showsPlaybackControls: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var managesPlaybackControlsAutomatically: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var posterViewConfig: BVUIControls.PosterViewConfig? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var player: BVPlayer.UniPlayer!
+  @_Concurrency.MainActor(unsafe) weak public var fullscreenHandler: (any BVPlayer.UniFullscreenHandler)?
+  @_Concurrency.MainActor(unsafe) public init(player: BVPlayer.UniPlayer, frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) convenience public init(player: BVPlayer.UniPlayer, frame: CoreFoundation.CGRect, playerViewConfig: BVUIControls.PlayerViewConfig)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func enterFullscreen()
+  @_Concurrency.MainActor(unsafe) public func exitFullscreen()
+  @_Concurrency.MainActor(unsafe) public func player(_ player: BVPlayer.UniPlayer, didReceiveOnSourceLoadedEvent event: BVPlayer.UniSourceLoadedEvent)
+  @_Concurrency.MainActor(unsafe) open func player(_ player: BVPlayer.UniPlayer, didReceiveOnReadyEvent event: any BVPlayer.UniEvent)
+  @_Concurrency.MainActor(unsafe) open func player(_ player: BVPlayer.UniPlayer, didReceiveOnVideoQualityChangedEvent event: BVPlayer.UniVideoPlaybackQualityChangedEvent)
+  @_Concurrency.MainActor(unsafe) open func player(_ player: BVPlayer.UniPlayer, didReceiveOnTimeChangedEvent event: BVPlayer.UniTimeChangedEvent)
+}
+extension BVUIControls.UniPlayerView {
+  @_Concurrency.MainActor(unsafe) public func add(listener: any BVUIControls.UniUserInterfaceListener)
+  @_Concurrency.MainActor(unsafe) public func remove(listener: any BVUIControls.UniUserInterfaceListener)
+}
+extension BVUIControls.UniPlayerView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+}
+extension BVUIControls.UniPlayerView : BVPlayer.UniSourceListener {
+  @_Concurrency.MainActor(unsafe) public func source(_ source: BVPlayer.UniSource, didReceiveSourceErrorEvent event: BVPlayer.UniSourceErrorEvent)
+}
+extension BVUIControls.UniPlayerView {
+  @_Concurrency.MainActor(unsafe) public func startPictureInPicture()
+  @_Concurrency.MainActor(unsafe) public func stopPictureInPicture()
+}
+public protocol UniSettingDetailViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  func controller(_ controller: BVUIControls.UniSettingDetailViewController, didSelectItem item: BVUIControls.UniUISettingItem)
+  func controllerDidPop(_ controller: BVUIControls.UniSettingDetailViewController)
+}
+@objc @_Concurrency.MainActor(unsafe) open class UniSettingDetailViewController : BVUIControls.UniUITableViewController {
+  @_Concurrency.MainActor(unsafe) final public let config: BVUIControls.UniUISettingConfig
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any BVUIControls.UniSettingDetailViewControllerDelegate)?
+  @_Concurrency.MainActor(unsafe) public init(config: BVUIControls.UniUISettingConfig)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) open func popViewController()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class UniUISettingItem {
+  final public let identifier: Swift.String
+  final public let group: BVUIControls.UniUISettingFactory.SettingGroup
+  final public let label: Swift.String
+  final public let rawValue: Swift.Float
+  public var category: BVPlayer.VideoQualityCategory
+  @objc deinit
+}
+public struct UniUISettingConfig {
+  public let selectedIdentifier: Swift.String?
+  public let items: [BVUIControls.UniUISettingItem]
+}
+@objc @_inheritsConvenienceInitializers final public class CastManagerOptions : ObjectiveC.NSObject {
+  final public var applicationId: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension BVUIControls.UniUIEventName : Swift.Equatable {}
+extension BVUIControls.UniUIEventName : Swift.Hashable {}
+extension BVUIControls.UniUIEventName : Swift.RawRepresentable {}
+extension BVUIControls.UniUISettingFactory.SettingGroup : Swift.Equatable {}
+extension BVUIControls.UniUISettingFactory.SettingGroup : Swift.Hashable {}
