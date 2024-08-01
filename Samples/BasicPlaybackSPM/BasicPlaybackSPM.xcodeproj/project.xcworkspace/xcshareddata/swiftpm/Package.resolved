@@ -1,13 +1,22 @@
 {
-  "originHash" : "9652794385da98cecb45120676f811dfffb411c2dfeffeb4fa73c7f9d917c0f5",
+  "originHash" : "133d26ea4cb5e30c484fa6b93f804f9066355a7c4f75944a9e178016df725b57",
   "pins" : [
     {
-      "identity" : "ios-player-sdk",
+      "identity" : "bvplayer-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/BlendVision/iOS-Player-SDK",
+      "location" : "https://github.com/BlendVision/bvplayer-ios",
       "state" : {
-        "revision" : "cba5da9d910f4dddd7f5a5722c4df1febe449e24",
-        "version" : "3.2.0"
+        "revision" : "388a26a85c7ce9a45c7481f0a5536b0e3efc19d1",
+        "version" : "4.0.0"
+      }
+    },
+    {
+      "identity" : "ios-player-uicontrols-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BlendVision/iOS-Player-UIControls-SDK",
+      "state" : {
+        "revision" : "2feea4bd72509c6b71b8894cdcdab37caa93ab1d",
+        "version" : "1.0.0"
       }
     }
   ],

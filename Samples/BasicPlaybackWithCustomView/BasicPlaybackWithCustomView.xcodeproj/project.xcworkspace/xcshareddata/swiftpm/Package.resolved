@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/BlendVision/bvplayer-ios",
       "state" : {
-        "revision" : "cba5da9d910f4dddd7f5a5722c4df1febe449e24",
-        "version" : "3.2.0"
+        "revision" : "388a26a85c7ce9a45c7481f0a5536b0e3efc19d1",
+        "version" : "4.0.0"
       }
     }
   ],
