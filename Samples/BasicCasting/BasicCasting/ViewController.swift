@@ -7,6 +7,7 @@
 
 import UIKit
 import BVPlayer
+import BVUIControls
 
 struct WidevineMaker {
 

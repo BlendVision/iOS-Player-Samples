@@ -7,6 +7,7 @@
 
 import UIKit
 import BVPlayer
+import BVUIControls
 import AVFoundation
 
 /// To use Picture in Picture (PIP) on iOS, the app needs to be configured in two ways, and users need to enable PIP in their settings.

@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  BasicPlayback
+//  BasicPlaybackSPM
 //
 //  Created by Tsung Cheng Lo on 2023/7/12.
 //
 
 import UIKit
 import BVPlayer
+import BVUIControls
 
 class ViewController: UIViewController {
     

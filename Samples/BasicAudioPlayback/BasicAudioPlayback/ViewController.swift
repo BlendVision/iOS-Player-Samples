@@ -7,10 +7,15 @@
 
 import UIKit
 import BVPlayer
+import BVUIControls
 
 class ViewController: UIViewController {
     
     var player: UniPlayer!
+    
+    var playerView: UniPlayerView!
+    
+    var sourceConfig: UniSourceConfig?
     
     deinit {
         player?.destroy()
@@ -29,12 +34,13 @@ class ViewController: UIViewController {
         // Create player configuration
         let playerConfig = UniPlayerConfig()
         playerConfig.key = "Your-license-Key"
-        
+        playerConfig.playbackConfig.isAutoplayEnabled = false
+
         // Create player based on player config
         player = UniPlayerFactory.create(player: playerConfig)
         
         // Create player view and pass the player instance to it
-        let playerView = UniPlayerView(player: player, frame: .zero)
+        playerView = UniPlayerView(player: player, frame: .zero)
         
         // Listen to player events
         player.add(listener: self)
@@ -47,13 +53,13 @@ class ViewController: UIViewController {
         view.bringSubviewToFront(playerView)
         
         // Create source config
-        let sourceConfig = UniSourceConfig(url: streamUrl, type: .hls)
+        sourceConfig = UniSourceConfig(url: streamUrl, type: .hls)
         // Set poster to source config
-        sourceConfig.posterSource = URL(string: "https://august-image.s3.ap-northeast-1.amazonaws.com/Logo_BlendVision_One_Color.png")
+        sourceConfig?.posterSource = URL(string: "https://august-image.s3.ap-northeast-1.amazonaws.com/Logo_BlendVision_One_Color.png")
         // Set poster to player view config
-        playerView.posterViewConfig = PosterViewConfig(source: sourceConfig)
+        playerView.posterViewConfig = PosterViewConfig(source: sourceConfig!)
         
-        player.load(sourceConfig: sourceConfig)
+        player.load(sourceConfig: sourceConfig!)
     }
 }
 
@@ -61,7 +67,12 @@ extension ViewController: UniPlayerListener {
     
     func player(_ player: UniPlayer, didReceiveOnEvent event: UniEvent) {
         // Uncomment the following line to observe the event of player
-        // debugPrint("event=\(event)")
+        debugPrint("event=\(event)")
+    }
+    
+    func player(_ player: UniPlayer, didReceiveOnPlayingEvent event: UniEvent) {
+        playerView.posterViewConfig = nil
+        
     }
 }
 
