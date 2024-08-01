@@ -8,6 +8,7 @@
 import UIKit
 import BVPlayer
 import BVUIControls
+import GoogleCast
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
