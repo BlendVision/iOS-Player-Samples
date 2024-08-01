@@ -7,7 +7,7 @@
 
 import UIKit
 import BVPlayer
-import GoogleCast
+import BVUIControls
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
