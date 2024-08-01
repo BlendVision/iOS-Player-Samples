@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C351DF32AE23207005C99BD /* GoogleCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */; };
-		0C351DF42AE23207005C99BD /* GoogleCast.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CC7FEDA2AE2155100E80C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC7FED92AE2155100E80C5F /* AppDelegate.swift */; };
 		0CC7FEDC2AE2155100E80C5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC7FEDB2AE2155100E80C5F /* SceneDelegate.swift */; };
 		0CC7FEDE2AE2155100E80C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC7FEDD2AE2155100E80C5F /* ViewController.swift */; };
@@ -28,7 +26,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C351DF42AE23207005C99BD /* GoogleCast.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleCast.xcframework; sourceTree = "<group>"; };
 		0C351E5E2AE277FC005C99BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0CC7FED62AE2155100E80C5F /* BasicDRMPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicDRMPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC7FED92AE2155100E80C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,14 +59,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C351DE82AE231FE005C99BD /* frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0C351DEA2AE231FE005C99BD /* GoogleCast.xcframework */,
-			);
-			path = frameworks;
-			sourceTree = "<group>";
-		};
 		0CC7FECD2AE2155100E80C5F = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +79,6 @@
 		0CC7FED82AE2155100E80C5F /* BasicDRMPlayback */ = {
 			isa = PBXGroup;
 			children = (
-				0C351DE82AE231FE005C99BD /* frameworks */,
 				0CC7FED92AE2155100E80C5F /* AppDelegate.swift */,
 				0CC7FEDB2AE2155100E80C5F /* SceneDelegate.swift */,
 				0CC7FEDD2AE2155100E80C5F /* ViewController.swift */,
