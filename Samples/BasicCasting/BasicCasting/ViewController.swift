@@ -45,7 +45,8 @@ class ViewController: UIViewController {
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "Your-License-Key"
+        playerConfig.serviceConfig.version = .v2
+        playerConfig.licenseKey = "Your-License-Key"
         
         playerConfig.remoteControlConfig.prepareSource = { type, sourceConfig in
             switch type {

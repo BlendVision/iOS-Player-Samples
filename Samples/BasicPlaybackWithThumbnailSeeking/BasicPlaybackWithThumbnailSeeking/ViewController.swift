@@ -34,7 +34,8 @@ class ViewController: UIViewController {
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "your-license-key"
+        playerConfig.serviceConfig.version = .v2
+        playerConfig.licenseKey = "Your-License-Key"
         
         // Create player based on player config
         player = UniPlayerFactory.create(player: playerConfig)
