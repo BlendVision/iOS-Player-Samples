@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         
         // Create player configuration
         let playerConfig = UniPlayerConfig()
-        playerConfig.key = "Your-license-Key"
+        playerConfig.serviceConfig.version = .v2
+        playerConfig.licenseKey = "Your-license-Key"
         playerConfig.playbackConfig.isAutoplayEnabled = false
 
         // Create player based on player config
