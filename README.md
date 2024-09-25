@@ -32,7 +32,8 @@ Please refer to [BVPlayer installation guild](https://github.com/BlendVision/iOS
 // Create player configuration
 let playerConfig = UniPlayerConfig()
 playerConfig.playbackConfig.isAutoplayEnabled = true
-playerConfig.key = "Your license key for playback"
+playerConfig.licenseKey = "Your license key for playback"
+playerConfig.serviceConfig.version = .v2
 
 // Create player based on player config
 player = UniPlayerFactory.create(player: playerConfig)
