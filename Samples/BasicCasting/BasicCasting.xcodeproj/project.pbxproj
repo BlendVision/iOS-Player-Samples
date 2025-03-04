@@ -13,8 +13,10 @@
 		0C0990B62AC40653001D5BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0990B42AC40653001D5BE5 /* Main.storyboard */; };
 		0C0990B82AC40654001D5BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0990B72AC40654001D5BE5 /* Assets.xcassets */; };
 		0C0990BB2AC40654001D5BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0990B92AC40654001D5BE5 /* LaunchScreen.storyboard */; };
+		A39A61A92CA2CDA600DC2B21 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A39A61A82CA2CDA600DC2B21 /* BVPlayer */; };
+		A39A61AC2CA2CDFE00DC2B21 /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A39A61AB2CA2CDFE00DC2B21 /* BVPlayer */; };
+		A3BDA1772D76D6A6008856AB /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3BDA1762D76D6A6008856AB /* BVPlayer */; };
 		A3F895EF2C5A4F9000A82F5F /* BVUIControls in Frameworks */ = {isa = PBXBuildFile; productRef = A3F895EE2C5A4F9000A82F5F /* BVUIControls */; };
-		A3F895F22C5A4F9900A82F5F /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3F895F12C5A4F9900A82F5F /* BVPlayer */; };
 		A3FAC0792C57B19700C1DA0B /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3FAC0782C57B19700C1DA0B /* BVPlayer */; };
 		A3FAC07C2C57B1A500C1DA0B /* BVUIControls in Frameworks */ = {isa = PBXBuildFile; productRef = A3FAC07B2C57B1A500C1DA0B /* BVUIControls */; };
 		A3FAC07F2C57B1DD00C1DA0B /* BVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A3FAC07E2C57B1DD00C1DA0B /* BVPlayer */; };
@@ -54,10 +56,12 @@
 			files = (
 				A3FAC0822C57B1E600C1DA0B /* BVUIControls in Frameworks */,
 				A3FAC0852C57B1F100C1DA0B /* BVPlayer in Frameworks */,
-				A3F895F22C5A4F9900A82F5F /* BVPlayer in Frameworks */,
+				A39A61A92CA2CDA600DC2B21 /* BVPlayer in Frameworks */,
 				A3FAC07F2C57B1DD00C1DA0B /* BVPlayer in Frameworks */,
 				A3FAC07C2C57B1A500C1DA0B /* BVUIControls in Frameworks */,
+				A39A61AC2CA2CDFE00DC2B21 /* BVPlayer in Frameworks */,
 				A3F895EF2C5A4F9000A82F5F /* BVUIControls in Frameworks */,
+				A3BDA1772D76D6A6008856AB /* BVPlayer in Frameworks */,
 				A3FAC0792C57B19700C1DA0B /* BVPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,7 +124,9 @@
 				A3FAC0812C57B1E600C1DA0B /* BVUIControls */,
 				A3FAC0842C57B1F100C1DA0B /* BVPlayer */,
 				A3F895EE2C5A4F9000A82F5F /* BVUIControls */,
-				A3F895F12C5A4F9900A82F5F /* BVPlayer */,
+				A39A61A82CA2CDA600DC2B21 /* BVPlayer */,
+				A39A61AB2CA2CDFE00DC2B21 /* BVPlayer */,
+				A3BDA1762D76D6A6008856AB /* BVPlayer */,
 			);
 			productName = BasicCasting;
 			productReference = 0C0990AB2AC40653001D5BE5 /* BasicCasting.app */;
@@ -152,7 +158,7 @@
 			mainGroup = 0C0990A22AC40653001D5BE5;
 			packageReferences = (
 				A3F895ED2C5A4F9000A82F5F /* XCRemoteSwiftPackageReference "iOS-Player-UIControls-SDK" */,
-				A3F895F02C5A4F9900A82F5F /* XCRemoteSwiftPackageReference "bvplayer-ios" */,
+				A3BDA1752D76D6A6008856AB /* XCRemoteSwiftPackageReference "bvplayer-ios" */,
 			);
 			productRefGroup = 0C0990AC2AC40653001D5BE5 /* Products */;
 			projectDirPath = "";
@@ -414,6 +420,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A3BDA1752D76D6A6008856AB /* XCRemoteSwiftPackageReference "bvplayer-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BlendVision/bvplayer-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
 		A3F895ED2C5A4F9000A82F5F /* XCRemoteSwiftPackageReference "iOS-Player-UIControls-SDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/BlendVision/iOS-Player-UIControls-SDK";
@@ -422,26 +436,26 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		A3F895F02C5A4F9900A82F5F /* XCRemoteSwiftPackageReference "bvplayer-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/BlendVision/bvplayer-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A39A61A82CA2CDA600DC2B21 /* BVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BVPlayer;
+		};
+		A39A61AB2CA2CDFE00DC2B21 /* BVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BVPlayer;
+		};
+		A3BDA1762D76D6A6008856AB /* BVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3BDA1752D76D6A6008856AB /* XCRemoteSwiftPackageReference "bvplayer-ios" */;
+			productName = BVPlayer;
+		};
 		A3F895EE2C5A4F9000A82F5F /* BVUIControls */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A3F895ED2C5A4F9000A82F5F /* XCRemoteSwiftPackageReference "iOS-Player-UIControls-SDK" */;
 			productName = BVUIControls;
-		};
-		A3F895F12C5A4F9900A82F5F /* BVPlayer */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A3F895F02C5A4F9900A82F5F /* XCRemoteSwiftPackageReference "bvplayer-ios" */;
-			productName = BVPlayer;
 		};
 		A3FAC0782C57B19700C1DA0B /* BVPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
