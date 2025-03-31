@@ -1,147 +1,208 @@
-# Integration Guide for Developers
-The tutorial will guide the developer the detailed flow to understand how to integrate with the iOS Player SDK step by step in your application.
-The iOS Player SDK, called UniPlayer provides convenient API about DRM, media controller and a generic graphic user interface. If the generic UI doesn't fit your needs, you can easily customize your own UI through the provided API.
+# BVPlayer iOS SDK Integration Guide
 
-## Develop Environment Requirements
+BVPlayer is a powerful iOS video player SDK that provides DRM support, media control, and flexible UI customization capabilities.
+
+## Requirements
+
 - Xcode 14.0+
 - iOS 14+
 - Swift 5.0+
 
-|  OS Archs**                 | iOS (arm64) | Simulator (arm64-M1) | Simulator (x86_64-Intel)
-|  :----                      | :----:      | :----:               | :----:
-| BVPlayer.xcframework	      | ✔           | ✘                    | ✔
-| BVPlayer_WOPSE.xcframework	| ✔           | ✔                    | ✔
+## Architecture Support
 
+| Architecture | iOS (arm64) | Simulator (arm64-M1) | Simulator (x86_64-Intel) |
+|-------------|-------------|---------------------|------------------------|
+| BVPlayer    | ✔           | ✔                   | ✔                      |
 
+## Installation
 
+Add the SDK to your project using **Swift Package Manager**
 
-## Dependencies & Installation
-In order to use BV iOS PalyerSDK package, please go in your project settings in Xcode > Package Dependencies tab and click on the "+" icon to add a new dependency.
+> For detailed installation instructions, please refer to [BVPlayer Installation Guide](https://github.com/BlendVision/bvplayer-ios)
 
-If you have purchased [Perceptual Streaming Engine (PSE)](https://support.one.blendvision.com/hc/en-us/articles/17051665212313--Beta-Perceptual-Streaming-Engine-PSE-) feature, please use `BVPlayer-latestverions.xcframework` and download the [GPUImage](https://github.com/BlendVision/GPUImage-framework/releases) framework that matches your Xcode version. If not, please use `BVPlayer-latestverions－WOPSE.xcframework` SDK package.
+## Basic Integration
 
-If you want have Google casting feature, please refer [GoogleCast with Guest Mode](https://developers.google.com/cast/docs/ios_sender) to setup.
-
-To add the [BVPLAYER](https://github.com/BlendVision/iOS-Player-SDK) SDK as a dependency to your project, you have two options:
-- Swift Package Manager
-- Adding the SDK bundle directly
-Please refer to [BVPlayer installation guild](https://github.com/BlendVision/iOS-Player-SDK) for more details.
-
-## How to initialize player (with import BV One license key)
-```
+### 1. Initialize Player
+```swift
 // Create player configuration
 let playerConfig = UniPlayerConfig()
 playerConfig.playbackConfig.isAutoplayEnabled = true
-playerConfig.licenseKey = "Your license key for playback"
-playerConfig.serviceConfig.version = .v2
+playerConfig.key = "Your license key"
 
-// Create player based on player config
-player = UniPlayerFactory.create(player: playerConfig)
-
-// Listen to player events
+// Initialize player
+let player = UniPlayerFactory.create(player: playerConfig)
 player.add(listener: self)
 ```
-## How to setup common view (UniPlayerView)
-```
-// Create player view and pass the player instance to it
-playerView = UniPlayerView(player: player, frame: .zero)
-playerView.translatesAutoresizingMaskIntoConstraints = false
-playerView.fullscreenHandler = self
 
-// Listen to UI events
-playerView.add(listener: self)
+### 2. Setup Player View
+```swift
+// Create custom player view
+class CustomPlayerView: UIView {
+    private let playerLayer: CALayer
+    
+    init(player: UniPlayer) {
+        self.playerLayer = player.playerLayer
+        super.init(frame: .zero)
+        
+        // Add player layer to your view
+        layer.addSublayer(playerLayer)
+        setupCustomControls()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        playerLayer.frame = bounds
+    }
+    
+    private func setupCustomControls() {
+        // Add your custom UI controls here
+    }
+}
+
+// Usage
+let customPlayerView = CustomPlayerView(player: player)
+customPlayerView.translatesAutoresizingMaskIntoConstraints = false
 ```
-## How to get playback session info (Manifests)
-API Document: https://docs.one-dev.kkstream.io/api/bv/v0.110.0/ui/elements/index.html#/operations/PublicPlaybackService_GetSessionInfo
-```
-let headers = [
-  "Content-Type": "application/json",
-  "x-kk-api-key": "Your API Key"
+
+### 3. Configure Source
+```swift
+// Create source configuration
+let sourceConfig = UniSourceConfig(url: "Your HLS URL", type: .hls)
+sourceConfig.title = "Video Title"
+sourceConfig.sourceDescription = "Video Description"
+
+// Configure DRM if needed
+let fpsConfig = UniFairPlayConfig(licenseUrl: "License URL", 
+                                  certificateUrl: "Certificate URL")
+
+// Add custom headers for certificate request if needed
+fpsConfig.certificateRequestHeaders = [
+    "Authorization": "Bearer your-token",
+    "Custom-Header": "custom-value"
 ]
 
-// Config playback session info url
-let urlString = "https://api-http.orbit-dev.kkstream.io/bv/playback/v1/sessions/{device_id}"
-let deviceId = "123456"
-
-// Replacing
-let url = URL(string: urlString.replacingOccurrences(of: "{device_id}", with: deviceId))!
-
-let request = NSMutableURLRequest(url: url,
-                                  cachePolicy: .useProtocolCachePolicy,
-                                  timeoutInterval: 10.0)
-request.httpMethod = "GET"
-request.allHTTPHeaderFields = headers
-
-let session = URLSession.shared
-let dataTask = session.dataTask(with: request as URLRequest,
-                               completionHandler: { (data, response, error) -> Void in
-  if (error != nil) {
-    print(error as Any)
-  } else {
-    let httpResponse = response as? HTTPURLResponse
-    print(httpResponse)
-  }
-})
-
-dataTask.resume()
-```
-## How to set the source configuration
-```
-// Create source config
-let hlsUrl = "https://xxx/xxx.m3u8"
-let sourceConfig = UniSourceConfig(url: hlsUrl, type: .hls)
-sourceConfig.title = "Your video title"
-sourceConfig.sourceDescription = "Your video description"
-```
-## How to start playback session
-API Document: https://docs.one-dev.kkstream.io/api/bv/v0.110.0/ui/elements/index.html#/operations/PublicPlaybackService_StartSession
-```
-import Foundation
-
-let headers = [
-  "Content-Type": "application/json",
-  "x-kk-api-key": "Your API Key"
+// Add custom headers for license request if needed
+fpsConfig.licenseRequestHeaders = [
+    "Authorization": "Bearer your-token",
+    "Custom-Header": "custom-value"
 ]
 
-let request = NSMutableURLRequest(url: NSURL(string: "https://api-http.orbit-dev.kkstream.io/bv/playback/v1/sessions/123:start")! as URL,
-                                  cachePolicy: .useProtocolCachePolicy,
-                                  timeoutInterval: 10.0)
-request.httpMethod = "POST"
-request.allHTTPHeaderFields = headers
-
-let session = URLSession.shared
-let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-  if (error != nil) {
-    print(error as Any)
-  } else {
-    let httpResponse = response as? HTTPURLResponse
-    print(httpResponse)
-  }
-})
-
-dataTask.resume()
-```
-## How to set DRM configuration
-```
-// Create drm configuration
-let fpsConfig = UniFairPlayConfig(licenseUrl: licenseUrl, certificateUrl: certUrl)
-fpsConfig.certificateRequestHeaders = "The certificate request headers"
-fpsConfig.licenseRequestHeaders = "The license request headers"
 sourceConfig.drmConfig = fpsConfig
 
-// Load source config
+// Load source
 player.load(sourceConfig: sourceConfig)
 ```
-## How to play/pause
-```
+
+### 4. Playback Controls
+```swift
+// Basic controls
 player.play()
 player.pause()
-```
-## How to release player
-```
+
+// Release resources when done
 player.destroy()
 ```
-## Casting Requirements
-> If you are using the Google Cast SDK, make sure the following requirements are met:
-- Use a provisioning profile with `Access WiFi Information` enabled
-- The `NSBluetoothAlwaysUsageDescription` key is set in the info.plist
+
+## Offline Playback
+
+BVPlayer SDK provides comprehensive offline playback capabilities, allowing you to:
+- Download HLS content for offline viewing
+- Manage download tasks (start, pause, resume, cancel)
+- Handle DRM-protected content offline
+- Monitor download progress and status
+- Manage downloaded content lifecycle
+
+The offline playback feature requires proper handling of the following components:
+- DownloadManager: Manages all download-related operations
+- DownloadContentManager: Handles specific content download and its lifecycle
+- DownloadContentManagerListener: Monitors download progress and status changes
+
+### 1. Initialize Download Manager
+```swift
+// Get shared download manager instance
+let downloadManager = DownloadManager.shared
+
+// Get download content manager for specific source
+let downloadContentManager = try await downloadManager.downloadContentManager(
+    for: sourceConfig,
+    identifier: "unique_video_id"
+)
+
+// Add listener for download events
+downloadContentManager.add(listener: self)
+```
+
+### 2. Download Content
+```swift
+// Start download with default settings
+downloadContentManager.download()
+
+// Or start download with specific track selection and config
+let tracks = try await downloadContentManager.fetchAvailableTracks()
+let downloadConfig = DownloadConfig()
+downloadConfig.minimumBitrate = 1000000 // 1Mbps
+downloadContentManager.download(tracks: tracks, config: downloadConfig)
+
+// Control download
+downloadContentManager.suspendDownload()  // Pause download
+downloadContentManager.resumeDownload()   // Resume download
+downloadContentManager.cancelDownload()   // Cancel download
+```
+
+### 3. Handle Download Events
+```swift
+extension YourViewController: DownloadContentManagerListener {
+    func onContentDownloadFinished(_ event: ContentDownloadFinishedEvent, manager: DownloadContentManager) {
+        print("Download finished")
+    }
+    
+    func onContentDownloadProgressChanged(_ event: ContentDownloadProgressChangedEvent, manager: DownloadContentManager) {
+        print("Download progress: \(event.progress)")
+    }
+    
+    func onContentDownloadSuspended(_ event: ContentDownloadSuspendedEvent, manager: DownloadContentManager) {
+        print("Download suspended")
+    }
+    
+    func onContentDownloadResumed(_ event: ContentDownloadResumedEvent, manager: DownloadContentManager) {
+        print("Download resumed")
+    }
+    
+    func onContentDownloadCanceled(_ event: ContentDownloadCanceledEvent, manager: DownloadContentManager) {
+        print("Download canceled")
+    }
+    
+    func onDownloadError(_ event: ContentDownloadErrorEvent, manager: DownloadContentManager) {
+        print("Download error: \(event.message)")
+    }
+}
+```
+
+### 4. Play Offline Content
+```swift
+// Create offline source configuration
+guard let offlineSourceConfig = downloadContentManager.createOfflineSourceConfig() else {
+    return
+}
+
+// Load offline source to player
+player.load(sourceConfig: offlineSourceConfig)
+```
+
+### 5. Manage Downloaded Content
+```swift
+// Delete downloaded content
+try await downloadContentManager.deleteOfflineData()
+
+// Renew DRM license for downloaded content
+try await downloadContentManager.renewOfflineLicense()
+```
+
+## API Documentation
+
+For detailed API documentation and advanced features, visit:
+[BV API Documentation](https://developers.blendvision.com/_/sdk/player/ios/documentation/bvplayer)
