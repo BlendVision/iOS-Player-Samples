@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     var moduleConfig: [String: String] {
         var config = [String: String]()
-        config[AnalyticsField.token.rawValue] = "analytics token"
         config[AnalyticsField.sessionId.rawValue] = "session id"
         config[AnalyticsField.resourceId.rawValue] = "source id"
         config[AnalyticsField.resourceType.rawValue] = "resource type"
@@ -42,8 +41,14 @@ class ViewController: UIViewController {
         playerConfig.serviceConfig.version = .v2
         playerConfig.licenseKey = "Your-License-Key"
         
+        // Configure analytics player config
+        let enabledAnalytics = AnalyticsPlayerConfig.enabled(
+            analyticsConfig: AnalyticsConfig(token: "Your-Analytics-Token"),
+            defaultMetadata: DefaultMetadata(moduleConfig: moduleConfig)
+        )
+        
         // Create player based on player config and module config
-        player = UniPlayerFactory.create(player: playerConfig, moduleConfig: moduleConfig)
+        player = UniPlayerFactory.createPlayer(playerConfig: playerConfig, analytics: enabledAnalytics)
         
         // Create player view and pass the player instance to it
         let playerView = UniPlayerView(player: player, frame: .zero)
