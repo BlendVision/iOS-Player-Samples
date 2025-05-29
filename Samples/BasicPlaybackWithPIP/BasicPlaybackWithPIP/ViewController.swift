@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         playerConfig.licenseKey = "Your-License-Key"
         
         // Create player based on player config
-        player = UniPlayerFactory.create(player: playerConfig)
+        player = UniPlayerFactory.createPlayer(playerConfig: playerConfig)
         
         // Create player view config and enable PIP feature
         var playerViewConfig = PlayerViewConfig()
