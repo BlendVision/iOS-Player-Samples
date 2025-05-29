@@ -1,18 +1,18 @@
-# BVPlayer iOS SDK Integration Guide
+# BVPlayer iOS/tvOS SDK Integration Guide
 
-BVPlayer is a powerful iOS video player SDK that provides DRM support, media control, and flexible UI customization capabilities.
+BVPlayer is a powerful **iOS** and **tvOS** video player SDK that provides DRM support, media control, and flexible UI customization capabilities.
 
 ## Requirements
 
 - Xcode 14.0+
-- iOS 14+
+- iOS 14.0+ / tvOS 18.0+
 - Swift 5.0+
 
 ## Architecture Support
 
-| Architecture | iOS (arm64) | Simulator (arm64-M1) | Simulator (x86_64-Intel) |
-|-------------|-------------|---------------------|------------------------|
-| BVPlayer    | ✔           | ✔                   | ✔                      |
+| Architecture | iOS (arm64) | tvOS (arm64) | Simulator (arm64-M1) | Simulator (x86_64-Intel) |
+|--------------|-------------|--------------|----------------------|--------------------------|
+| BVPlayer     | ✔           | ✔            | ✔                    | ✔                        |
 
 ## Installation
 
@@ -20,17 +20,34 @@ Add the SDK to your project using **Swift Package Manager**
 
 > For detailed installation instructions, please refer to [BVPlayer Installation Guide](https://github.com/BlendVision/bvplayer-ios)
 
+## Important Migration Note
+
+If you are upgrading from an older version of the BVPlayer SDK, note the following changes:
+- The `key` property in `UniPlayerConfig` is removed; use `licenseKey` instead.
+- The `UniPlayerFactory.create(player:)` method is replaced with `createPlayer(playerConfig:analytics:)`.
+- Analytics configuration now requires `AnalyticsPlayerConfig` with `AnalyticsConfig` for tokens (replacing `AnalyticsField.token`).
+- Refer to the [Migration Guide](/Migrations/analytics_migration_guide.md) for detailed steps.
+
 ## Basic Integration
+
+BVPlayer can be integrated into both **iOS** and **tvOS** applications with minimal code changes.  
+On tvOS, make sure to optimize UI elements for focus and remote control navigation.
 
 ### 1. Initialize Player
 ```swift
 // Create player configuration
 let playerConfig = UniPlayerConfig()
 playerConfig.playbackConfig.isAutoplayEnabled = true
-playerConfig.key = "Your license key"
+playerConfig.licenseKey = "your-license-key" // Replace with your license key
+
+// Configure analytics (optional)
+let analyticsConfig = AnalyticsPlayerConfig.enabled(
+    analyticsConfig: AnalyticsConfig(token: "your-analytics-token"), // Replace with your token
+    defaultMetadata: DefaultMetadata(moduleConfig: YourModuleConfig()) // Replace with your module config
+)
 
 // Initialize player
-let player = UniPlayerFactory.create(player: playerConfig)
+let player = UniPlayerFactory.createPlayer(playerConfig: playerConfig, analytics: analyticsConfig)
 player.add(listener: self)
 ```
 
