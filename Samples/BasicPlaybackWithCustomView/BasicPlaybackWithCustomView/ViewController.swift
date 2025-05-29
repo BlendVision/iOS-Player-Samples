@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         playerConfig.licenseKey = "Your-License-Key"
         
         // Create player based on player config
-        player = UniPlayerFactory.create(player: playerConfig)
+        player = UniPlayerFactory.createPlayer(playerConfig: playerConfig)
         
         // Create player view and pass the player instance to it
         let playerView = CustomView(player: player, frame: .zero)
