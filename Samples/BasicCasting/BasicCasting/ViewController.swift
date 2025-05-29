@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         }
         
         // Create player based on player config
-        player = UniPlayerFactory.create(player: playerConfig)
+        player = UniPlayerFactory.createPlayer(playerConfig: playerConfig)
         
         // Create player view and pass the player instance to it
         let playerView = UniPlayerView(player: player, frame: .zero)
