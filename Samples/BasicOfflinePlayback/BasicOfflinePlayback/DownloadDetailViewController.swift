@@ -217,7 +217,7 @@ class DownloadDetailViewController: UIViewController {
         playerConfig.serviceConfig.version = .v2
         playerConfig.licenseKey = "Your-License-Key"
         
-        let player = UniPlayerFactory.create(player: playerConfig)
+        let player = UniPlayerFactory.createPlayer(playerConfig: playerConfig)
         let controller = UniPlayerViewController()
         controller.sourceConfig = offlineSourceConfig
         controller.player = player

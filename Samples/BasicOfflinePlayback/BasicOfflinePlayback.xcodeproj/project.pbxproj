@@ -426,7 +426,7 @@
 			repositoryURL = "https://github.com/BlendVision/bvplayer-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 		A3F895DE2C5A4DB500A82F5F /* XCRemoteSwiftPackageReference "iOS-Player-UIControls-SDK" */ = {
