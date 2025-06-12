@@ -22,11 +22,11 @@ final class ViewModel {
     }
     
     private func createUndercurrent() -> UniSourceConfig {
-        let sourceUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/d65451ac-f080-42c7-b3e2-746c4ca40fa7/vod/hls.m3u8")!
+        let sourceUrl = URL(string: "https://d1kn28obgh8dky.cloudfront.net/7d1e6d5e-6245-43a3-aba0-8e16cf353db5/vod/48f7aab0-cd33-4c8c-91a3-0fe4687563ae/vod/hls.m3u8")!
         let sourceConfig = UniSourceConfig(url: sourceUrl, type: .hls)
         
-        sourceConfig.title = "Undercurrent"
-        sourceConfig.sourceDescription = "Non DRM"
+        sourceConfig.title = "DRM Content (DRM configuration is required)"
+        sourceConfig.sourceDescription = "DRM"
         sourceConfig.posterSource = URL(string: "https://bitdash-a.akamaihd.net/content/art-of-motion_drm/art-of-motion_poster.jpg")!
         return sourceConfig
     }
