@@ -4,7 +4,7 @@
 This sample project demonstrates how to download HLS (HTTP Live Streaming) content using Swift with full FairPlay DRM support, network monitoring, and offline playback capabilities. The project includes a comprehensive download manager system that handles both online and offline scenarios.
 
 ## Key Features
-- **FairPlay DRM Support**: Complete DRM license management and persistence
+- **FairPlay DRM Support**: Complete DRM license management and persistence (FairPlayDataModel must be configured for DRM content downloads)
 - **Network Status Monitoring**: Automatic network connectivity detection and handling
 - **Offline Playback**: Support for two offline playback modes
 - **Data Persistence**: Automatic saving of bookmark data and license data
@@ -63,9 +63,13 @@ iOS allows HLS video downloads to run in a background thread, even if an app is 
 ## Initial Setup
 
 ### 1. Configure FairPlay DRM
+
+**Important**: `FairPlayDataModel` must be properly configured before downloading DRM-protected content. Without proper DRM configuration, download operations will fail for protected content.
+
 ```swift
 let fairPlayDataModel = FairPlayDataModel()
 
+// Ensure FairPlay configuration is valid before proceeding
 if let licenseUrl = URL(string: fairPlayDataModel.licenseUrl),
    let certUrl = URL(string: fairPlayDataModel.fairplayCertUrl) {
     
@@ -74,14 +78,19 @@ if let licenseUrl = URL(string: fairPlayDataModel.licenseUrl),
     fpsConfig.certificateRequestHeaders = fairPlayDataModel.certHeaders
     fpsConfig.licenseRequestHeaders = fairPlayDataModel.licenseHeaders
     
-    // Configure license persistence
+    // Configure license persistence for offline playback
     fpsConfig.persistLicenseData = { assetId, licenseData in
         UserDefaults.standard.setValue(licenseData, forKey: self.licenseIdentifier ?? "unknown key")
     }
     
     sourceConfig?.drmConfig = fpsConfig
+} else {
+    // Handle missing DRM configuration
+    debugPrint("Warning: FairPlay DRM configuration is invalid - DRM content downloads will fail")
 }
 ```
+
+**Note**: For non-DRM content, FairPlay configuration is not required.
 
 ### 2. Network Status Monitoring
 ```swift
@@ -141,6 +150,11 @@ if networkMonitor.isNetworkAvailable() {
     guard networkMonitor.isNetworkAvailable() else {
         showNetworkAlert(message: "No network connection, cannot start download")
         return
+    }
+    
+    // Ensure DRM configuration is set for protected content
+    if sourceConfig?.drmConfig == nil {
+        debugPrint("Warning: No DRM configuration found - ensure FairPlayDataModel is properly configured for DRM content")
     }
     
     guard let tracks = trackSelection else { return }
