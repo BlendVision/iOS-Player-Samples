@@ -10,6 +10,56 @@ This sample project demonstrates how to download HLS (HTTP Live Streaming) conte
 - **Data Persistence**: Automatic saving of bookmark data and license data
 - **Complete Download Lifecycle Management**: Including pause, resume, cancel, delete operations
 
+## Download State Management
+
+The download system manages content through various states with specific transitions triggered by method calls and events. Understanding this state flow is crucial for proper implementation.
+
+### Download State Transition Table
+
+| Current State | Method call triggering transition | downloadContentManager Listener event | Following State |
+|---------------|-----------------------------------|---------------------------------------|-----------------|
+| **NotDownloaded** | `download` | - | **Downloading** |
+| **Downloading** | `cancelDownload` | - | **Canceling** |
+| **Downloading** | `suspendDownload` | `ContentDownloadSuspendedEvent` | **Suspended** |
+| **Downloading** | - | `ContentDownloadFinishedEvent` | **Downloaded** |
+| **Downloading** | - | `ContentDownloadProgressChangedEvent` | **Downloading** |
+| **Downloaded** | `deleteOfflineData` | - | **NotDownloaded** |
+| **Suspended** | `resumeDownload` | `ContentDownloadResumedEvent` | **Downloading** |
+| **Suspended** | `cancelDownload` | - | **Canceling** |
+| **Canceling** | - | `ContentDownloadCanceledEvent` | **NotDownloaded** |
+
+### State Descriptions
+
+- **NotDownloaded**: Initial state when content hasn't been downloaded yet
+- **Downloading**: Active download in progress with progress updates
+- **Suspended**: Download temporarily paused, can be resumed
+- **Downloaded**: Content successfully downloaded and ready for offline playback
+- **Canceling**: Download cancellation in progress
+- **Canceled**: Download has been canceled (returns to NotDownloaded)
+
+## Downloading Videos In The Background
+
+iOS allows HLS video downloads to run in a background thread, even if an app is suspended or terminated under certain conditions.
+
+### Background Download Recovery Capability
+
+| Items | Can recover | Can't recover |
+|-------|-------------|---------------|
+| App termination due to memory pressure in foreground | ✓ | |
+| App termination due to high memory usage when the app is suspended | ✓ | |
+| App crashes (null pointers, exceptions, etc.) | ✓ | |
+| App termination while suspended due to limited system resources | ✓ | |
+| Running with Xcode (when Xcode terminates the process) | | ✓ |
+| Termination via the App Switcher | | ✓ |
+| Termination while the app is suspended and the device reboots | | ✓ |
+
+### Important Notes
+
+- Downloads that can recover will automatically resume when the app restarts
+- User-initiated terminations (App Switcher) cannot be recovered
+- Development builds terminated by Xcode cannot recover downloads
+- System reboots will terminate all background downloads
+
 ## Initial Setup
 
 ### 1. Configure FairPlay DRM
